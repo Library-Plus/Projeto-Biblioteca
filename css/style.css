@@ -1,0 +1,35 @@
+.cabecalho{
+    background-color: lightgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px black solid;
+    padding: 5px 10px 5px 10px;
+}
+.titulo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    padding: 10px;
+}
+.subtitulo{
+    font-family: arial;
+    font-size: 24px;
+    padding: 10px;
+}
+a{
+    font-family: Arial;
+    color: black;
+    text-decoration: none;
+}
+tr, th{
+    border: 3px #385170 solid;
+    background: rgb(173, 230, 203);
+    padding: 5px;
+}
+tr, th:hover{
+    background: lightgrey;
+}
+body{
+    background-color: lightgreen;
+}
+footer{
+    float: right;
+}
