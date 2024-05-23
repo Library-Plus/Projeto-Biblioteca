@@ -11,7 +11,7 @@
   				font-size: 16px;
 			}
 			.login{
-				padding: 10% 0% 0% 45%;
+				padding: 4% 0% 0% 45%;
 			}
 			.erro {
 				border: 2px black solid;
