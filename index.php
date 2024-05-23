@@ -4,6 +4,7 @@
         <title></title>
         <style>
 			body{
+				padding: 10px;
 				background: white;
 				font-family: 'Source Code Pro', monospace;
 				font-style: normal;
