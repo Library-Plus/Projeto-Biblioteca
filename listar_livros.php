@@ -21,7 +21,9 @@
 			</thead>
 			<tbody>
 			<?php
-				$sql = 'SELECT id, id_tipo, titulo, sinopse,  status FROM livro'; 
+				$sql = 'SELECT livro.id, livro.titulo, tipo.genero AS tipo, livro.sinopse, livro.status
+				FROM livro
+				JOIN tipo ON livro.id_tipo = tipo.id'; 
 				$query = mysqli_query($conexao, $sql);
 				if (!$query) {
 					echo 'Erro no banco: ' . mysqli_error($conexao);
@@ -31,7 +33,7 @@
 				<tr>
 					<td><?php echo $item['id']; ?></td>
 					<td><?php echo $item['titulo']; ?></td>
-					<td><?php echo $item['id_tipo']; ?></td>
+					<td><?php echo $item['tipo']; ?></td>
 					<td><?php echo $item['sinopse']; ?></td>
 					<td><?php echo $item['status'] == 'A' ? 'Ativo' : 'Inativo'; ?></td>
 					<td>

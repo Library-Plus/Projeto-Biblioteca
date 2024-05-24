@@ -11,8 +11,8 @@
 
 			<label for="sexo">Sexo biológico:</label><br>
 			<select name="sexo" id="sexo">
-  				<option value="masculino">Masculino</option>
-  				<option value="feminino">Feminino</option>
+  				<option value="m">Masculino</option>
+  				<option value="f">Feminino</option>
 			</select><br><br>
 			
 			<label for="usuario">Login:</label><br>
