@@ -53,13 +53,6 @@ label{
   padding: 10px;
   width: 100px;
 }
-h1{
-  unicode-bidi: bidi-override;
-  direction: rtl;
-}
-h1::first-letter{
-  color: #2ba5f7;
-}
 .quebra{
   clear: left;
 }

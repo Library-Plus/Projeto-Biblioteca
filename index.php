@@ -10,20 +10,16 @@
 			$msg = @$_GET['msg'];
 		?>
 		
-		
-
 		<header>
 			<div class="cabecalho">
 				<img class="logo" src="imagens/logo.png" alt="logo">
 			</div>
 			<div class="cabecalho">
-				<h1>  +biL </h1>
+				<h1>  Lib+ </h1>
 			</div>
 			<div class="quebra">
 			</div>
 		</header>
-		
-		
 
         <div class="form-login <?php if($erro == 1){ echo 'has-error';}?>">
 		<img class="user" src="imagens/user.png" alt="user" >
