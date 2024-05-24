@@ -11,7 +11,7 @@
   				font-size: 16px;
 			}
 			.login{
-				padding: 4% 0% 0% 45%;
+				padding: 3% 0% 0% 45%;
 			}
 			.erro {
 				border: 2px black solid;
@@ -33,9 +33,20 @@
 				font-weight: bold;
 			}
 			.logo{
-				width: 8%;
-				height: 8%;
-				padding: 0% 0% 0% 47%;
+				height: 100px;
+			}
+			.user{
+				width: 12%;
+				height: 12%;
+				padding: 0% 0% 0% 46%;
+			}
+			.cabecalho{
+				padding: 10px;
+				float: left;
+				width: 100px;
+			}
+			.quebra{
+				clear: left;
 			}
 		</style>
     </head>
@@ -58,9 +69,17 @@
 		<?php  } ?>
 
 		<header>
-			<img class="logo" src="imagens/logo.png" alt=	"logo" >
-		</header><br><br><br>
-
+			<div class="cabecalho">
+				<img class="logo" src="imagens/logo.png" alt="logo">
+			</div>
+			<div class="cabecalho">
+				<h1>  Lib+ </h1>
+			</div>
+			<div class="quebra">
+			</div>
+		</header>
+		
+		<img class="user" src="imagens/user.png" alt="user" >
 		
         <div class="login">
 			<form action="login_db.php" method="post">
