@@ -2,53 +2,7 @@
 <html lang="pt-br">
     <head>
         <title></title>
-        <style>
-			body{
-				padding: 10px;
-				background: white;
-				font-family: 'Source Code Pro', monospace;
-				font-style: normal;
-  				font-size: 16px;
-			}
-			.login{
-				padding: 3% 0% 0% 45%;
-			}
-			.erro {
-				border: 2px black solid;
-				padding: 3px;
-				background-color: #2ba5f7;
-				color: black;
-			}
-			button{
-				border: 1px black solid;
-				font-size: 18px;
-				font-family: 'Source Code Pro', monospace;
-   				color: #F8C045;
-				font-weight: bold;
-			}
-			button:hover{
-				background: lightgrey;
-			}
-			label{
-				font-weight: bold;
-			}
-			.logo{
-				height: 100px;
-			}
-			.user{
-				width: 12%;
-				height: 12%;
-				padding: 0% 0% 0% 46%;
-			}
-			.cabecalho{
-				padding: 10px;
-				float: left;
-				width: 100px;
-			}
-			.quebra{
-				clear: left;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
     </head>
     <body>
         <?php

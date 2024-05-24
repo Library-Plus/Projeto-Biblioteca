@@ -4,20 +4,11 @@
 <!DOCTYPE html>
 <html lang="pt=br">
 	<head>
-		<title></title>
-		<style>
-			table {
-				border-collapse: collapse;
-			}
-			th, td {
-				border: 1px solid black;
-			}
-		</style>
 	</head>
 	<body>
 		<?php include('menu.php'); ?>
 		<a href="cadastrar_livros.php">Cadastrar</a>
-		<table>
+		<table class="tabela">
 			<thead>
 				<tr>
 					<th>Código</th>

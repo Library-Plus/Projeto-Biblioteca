@@ -6,22 +6,6 @@
 <html lang="pt=br">
 	<head>
 		<title></title>
-		<style>
-			table {
-				border-collapse: collapse;
-			}
-			th, td {
-				border: 1px solid black;
-			}
-			.erro, .ok {
-				background-color: red;
-				color: white;
-				padding: 5px;
-			}
-			.ok {
-				background-color: green;
-			}
-		</style>
 	</head>
 	<body>
 		<?php include('menu.php'); ?>
@@ -61,7 +45,7 @@
 		
 
 		<a href="cadastrar_clientes.php">Cadastrar</a>
-		<table>
+		<table class="tabela">
 			<thead>
 				<tr>
 					<th>Código</th>

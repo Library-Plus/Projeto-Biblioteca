@@ -1,13 +1,16 @@
 <body>
-    <header>
-        <div class="logo1">
-            <div class="titulo"> Lib+</div>
-            <div class="subtitulo">Seu ajudante virtual</div>
-        </div>
-    </header>
+<header>
+    <div class="cabecalho">
+        <img class="logo" src="imagens/logo.png" alt="logo">
+	</div>
+	<div class="cabecalho">
+		<h1>  Lib+ </h1>
+	</div>
+	<div class="quebra"> </div>
+</header>
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
 </body>
-<div class="cabecalho">
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+<div class="menu">
     <table>
         <thead>
             <tr>
@@ -20,7 +23,6 @@
                 <th><a href="sair.php">Sair</a></th>
             </tr>
         </thead>
-        <footer>© Copyright 2023</footer>
     </table>
 </div>
 <br><br>

@@ -1,35 +1,65 @@
-.cabecalho{
-    background-color: lightgreen;
-    font-family: Arial, Helvetica, sans-serif;
-    border: 1px black solid;
-    padding: 5px 10px 5px 10px;
-}
-.titulo{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 50px;
-    padding: 10px;
-}
-.subtitulo{
-    font-family: arial;
-    font-size: 24px;
-    padding: 10px;
-}
-a{
-    font-family: Arial;
-    color: black;
-    text-decoration: none;
-}
-tr, th{
-    border: 3px #385170 solid;
-    background: rgb(173, 230, 203);
-    padding: 5px;
-}
-tr, th:hover{
-    background: lightgrey;
-}
 body{
-    background-color: lightgreen;
+  padding: 10px;
+  background: white;
+  font-family: 'Source Code Pro', monospace;
+  font-style: normal;
+  font-size: 16px;
 }
-footer{
-    float: right;
+.login{
+  padding: 3% 0% 0% 45%;
+}
+.erro {
+  border: 2px black solid;
+  padding: 3px;
+  background-color: #2ba5f7;
+  color: black;
+}
+button{
+  border: 1px black solid;
+  font-size: 18px;
+  font-family: 'Source Code Pro', monospace;
+  color: #F8C045;
+  font-weight: bold;
+}
+label{
+  font-weight: bold;
+}
+.logo{
+  height: 100px;
+}
+.logoMenu{
+  float: left;
+  height: 100px;
+}
+.user{
+  width: 12%;
+  height: 12%;
+  padding: 0% 0% 0% 46%;
+}
+.cabecalho{
+  float: left;
+  padding: 10px;
+  width: 100px;
+}
+.quebra{
+  clear: left;
+}
+/*MENU.PHP*/
+a{
+  color: goldenrod;
+  padding: 5px;
+  background-color: white;
+  border: 3px black solid;
+  text-decoration: none;
+}
+a:hover{
+  color: goldenrod;
+  padding: 5px;
+  background-color: lightyellow;
+  border: 3px black solid;
+  text-decoration: none;
+}
+.tabela{
+  padding: 5px;
+  border: 3px black solid;
 }
