@@ -7,16 +7,20 @@ body{
 }
 .form-login{
   border: 2px #2ba5f7 solid;
-  border-radius: 10%;
-  margin: 20px 500px 0px 500px;
+  border-radius: 30px;
+  width: 20%;
+  margin: 12% 0% 0% 38%;
 }
 .form-login.has-error{
   border: 2px red solid;
-  border-radius: 10%;
-  margin: 0px 500px 0px 500px;
+  border-radius: 30px;
+  width: 20%;
+  margin: 12% 0% 0% 38%;
 }
 .erro {
-  padding: 3px;
+  font-weight: bold;
+  padding: 2px;
+  margin: 18%;
   background-color: white;
   color: red;
 }
@@ -35,7 +39,7 @@ label{
   font-weight: bold;
 }
 .logo{
-  height: 100px;
+  height: 50px;
 }
 .logoMenu{
   float: left;
@@ -51,7 +55,8 @@ label{
 .cabecalho{
   float: left;
   padding: 10px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
 }
 .quebra{
   clear: left;
@@ -59,30 +64,54 @@ label{
 /*MENU.PHP*/
 a{
   color: black;
-  padding: 5px;
+  margin-left: 5px;
+  border-radius: 15px;
   background-color: white;
-  border: 1px black solid;
   text-decoration: none;
+  font-weight: normal;
 }
 a:hover{
-  color: goldenrod;
-  padding: 5px;
-  background-color: lightyellow;
-  border: 3px black solid;
+  color: black;
+  background-color: #E8E8E8;
   text-decoration: none;
-}
-.tabela{
-  padding: 5px;
-  border: 2px black solid;
+  font-weight: normal;
 }
 .formulario{
   padding: 0% 0% 0% 26%;
   margin-bottom: 30px;
 }
-td{
-  border: 1px black solid;
-}
 header{
   background-color: white;
-  border: 2px black solid;
+  border: 1px #E8E8E8 solid;
+  padding-bottom: 10px;
 }
+h1{
+  font-size: 22px;
+}
+.tabela{
+  width: 99%;
+  margin-top: 10px;
+  margin-left: 0.5%;
+  padding: 5px;
+  height: 80px;
+  border-collapse: collapse;
+}
+td{
+  padding-left: 145px;
+}
+.tabela thead{
+  background-color: #2ba5f7;
+  color: white;
+}
+.tabela tbody, tr {
+  border-bottom: 1px solid #dddddd;
+}
+p {
+  margin-left: 10px;
+}
+/*.teste{
+  float: left;
+  padding-top: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+} */
