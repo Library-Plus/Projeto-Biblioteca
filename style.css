@@ -65,7 +65,7 @@ label{
 a{
   color: black;
   margin-left: 5px;
-  padding: 9px;
+  padding: 4px;
   border-radius: 15px;
   background-color: white;
   text-decoration: none;
@@ -73,7 +73,7 @@ a{
 }
 a:hover{
   color: black;
-  padding: 9px;
+  padding: 4px;
   background-color: #E8E8E8;
   text-decoration: none;
   font-weight: normal;
