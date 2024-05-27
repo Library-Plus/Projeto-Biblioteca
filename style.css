@@ -1,0 +1,119 @@
+body{
+  background: white;
+  font-family: 'Source Code Pro', monospace;
+  font-style: normal;
+  font-size: 16px;
+  margin: 0px;
+}
+.form-login{
+  border: 2px #2ba5f7 solid;
+  border-radius: 30px;
+  width: 20%;
+  margin: 12% 0% 0% 38%;
+}
+.form-login.has-error{
+  border: 2px red solid;
+  border-radius: 30px;
+  width: 20%;
+  margin: 12% 0% 0% 38%;
+}
+.erro {
+  font-weight: bold;
+  padding: 2px;
+  margin: 18%;
+  background-color: white;
+  color: red;
+}
+.div-erro{
+  margin-top: 50px;
+  margin-left: 545px;
+}
+button{
+  border: 1px black solid;
+  font-size: 18px;
+  font-family: 'Source Code Pro', monospace;
+  color: black;
+  font-weight: bold;
+}
+label{
+  font-weight: bold;
+}
+.logo{
+  height: 50px;
+}
+.logoMenu{
+  float: left;
+  height: 100px;
+}
+.user{
+  width: 30%;
+  height: 30%;
+  padding: 0% 0% 0% 35%;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+.cabecalho{
+  float: left;
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+}
+.quebra{
+  clear: left;
+}
+/*MENU.PHP*/
+a{
+  color: black;
+  margin-left: 5px;
+  padding: 9px;
+  border-radius: 15px;
+  background-color: white;
+  text-decoration: none;
+  font-weight: normal;
+}
+a:hover{
+  color: black;
+  padding: 9px;
+  background-color: #E8E8E8;
+  text-decoration: none;
+  font-weight: normal;
+}
+.formulario{
+  padding: 0% 0% 0% 26%;
+  margin-bottom: 30px;
+}
+header{
+  background-color: white;
+  border: 1px #E8E8E8 solid;
+  padding-bottom: 10px;
+}
+h1{
+  font-size: 22px;
+}
+.tabela{
+  width: 99%;
+  margin-top: 10px;
+  margin-left: 0.5%;
+  padding: 5px;
+  height: 80px;
+  border-collapse: collapse;
+}
+td{
+  padding-left: 145px;
+}
+.tabela thead{
+  background-color: #2ba5f7;
+  color: white;
+}
+.tabela tbody, tr {
+  border-bottom: 1px solid #dddddd;
+}
+p {
+  margin-left: 10px;
+}
+/*.teste{
+  float: left;
+  padding-top: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+} */
