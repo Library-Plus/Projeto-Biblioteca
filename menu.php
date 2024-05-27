@@ -3,7 +3,7 @@
     <header>
         <div class="teste">
             <div class="cabecalho">
-                <img class="logo" src="imagens/logo.png" alt="logo">
+                <a href="menu.php"><img class="logo" src="imagens/logo.png" alt="logo"></a>
 	        </div>
 	        <div class="cabecalho">
 		        <h1>  Lib+ </h1>
