@@ -9,12 +9,14 @@
 	</head>
 	<body>
 		<?php include('menu.php'); ?>
+		<a href="cadastrar_clientes.php">Cadastrar</a>
+		<a href="json_listar_clientes.php">Exportar</a>
+		<a href="json_importar_clientes.php">Importar</a><br><br>
 		<?php
 			$erro = @$_GET['erro'];
 			$msg = @$_GET['msg'];
 			$ok = @$_GET['ok'];
-		?>
-		
+			?>
 		<?php  if($erro) { ?>
 			<span class="erro">
 				<?php
@@ -44,7 +46,6 @@
 		<?php  } ?>
 		
 
-		<a href="cadastrar_clientes.php">Cadastrar</a>
 		<table class="tabela">
 			<thead>
 				<tr>
