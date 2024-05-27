@@ -48,7 +48,7 @@
 			?>
 			</tbody>
 		</table>
-		Existe(m) <?php echo mysqli_num_rows($query); ?> registro(s)
+		<p> Existe(m) <?php echo mysqli_num_rows($query); ?> registro(s)</p>
 	</body>
 </html>
 <?php

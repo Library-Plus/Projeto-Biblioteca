@@ -1,14 +1,17 @@
 <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
 <body>
     <header>
-        <div class="cabecalho">
-            <img class="logo" src="imagens/logo.png" alt="logo">
-	    </div>
-	    <div class="cabecalho">
-		    <h1>  Lib+ </h1>
-	    </div>
-	    <div class="quebra"> </div>
-        <div class="menu">
+        <div class="teste">
+            <div class="cabecalho">
+                <img class="logo" src="imagens/logo.png" alt="logo">
+	        </div>
+	        <div class="cabecalho">
+		        <h1>  Lib+ </h1>
+	        </div>
+	        <div class="quebra"></div>
+        </div>
+        <div class="teste">
+            <div class="menu">
             <table>
                 <thead>
                     <tr>
@@ -22,6 +25,7 @@
                     </tr>
                 </thead>
             </table>
+            </div>
         </div>
     </header>
 </body>  

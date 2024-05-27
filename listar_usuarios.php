@@ -44,10 +44,10 @@
 		<?php  } ?>
 		
 
-		<a href="cadastrar_usuarios.php">Cadastrar</a>
+		<a class="button_cadastrar" href="cadastrar_usuarios.php">Cadastrar</a>
 		<table class="tabela">
-			<thead>
-				<tr>
+			<thead class="thead_tabela">
+				<tr class="tr_tabela">
 					<th>Código</th>
 					<th>Nome</th>
 					<th>Sexo</th>
@@ -55,7 +55,7 @@
 					<th>Ações</th>
 				</tr>
 			</thead>
-			<tbody>
+			<tbody class="tbody_tabela">
 			<?php
 				$sql = 'SELECT id, nome, usuario, sexo FROM usuario';
 				$query = mysqli_query($conexao, $sql);
@@ -79,7 +79,7 @@
 			?>
 			</tbody>
 		</table>
-		Existe(m) <?php echo mysqli_num_rows($query); ?> registro(s)
+		<p> Existe(m) <?php echo mysqli_num_rows($query); ?> registro(s)</p>
 	</body>
 </html>
 <?php

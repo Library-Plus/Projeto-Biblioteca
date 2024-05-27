@@ -15,7 +15,9 @@
 				<img class="logo" src="imagens/logo.png" alt="logo">
 			</div>
 			<div class="cabecalho">
-				<h1>  Lib+ </h1>
+				<div class="teste">
+					<h1>  Lib+ </h1>
+				</div>
 			</div>
 			<div class="quebra">
 			</div>
