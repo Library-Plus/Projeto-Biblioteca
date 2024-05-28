@@ -43,7 +43,7 @@ body{
   border-radius: 15px;
   width: 14%;
   padding: 0px 0px 10px 0px;
-  margin: 5px 0px 0px 470px;
+  margin: 5px 0px 0px 530px;
 }
 .img-box {
   margin: 2% 0% 0% 6%;
@@ -69,18 +69,14 @@ body{
   color: red;
 }
 .div-erro{
-  margin-top: 50px;
-  margin-left: 545px;
+  margin-top: 10px;
+  margin-left: 360px;
 }
 label{
   font-weight: bold;
 }
 .logo{
   height: 50px;
-}
-.logo-index{
-  height: 50px;
-  margin-left: 0px;
 }
 .logoMenu{
   float: left;
@@ -99,7 +95,7 @@ label{
 }
 .cabecalho-index{
   padding: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
   height: 50px;
   width: 50px;
 }

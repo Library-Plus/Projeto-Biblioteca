@@ -25,7 +25,6 @@
                         <th><a class="link-menu" href="listar_livros.php">Livros</a></th>
                         <th><a class="link-menu" href="listar_aluguel.php">Aluguel</a></th>
                         <th><a class="link-menu" href="listar_usuarios.php">Usuários</a></th>
-                        <th><a class="link-menu" href="sair.php">Sair</a></th>
                     </tr>
                 </thead>
             </table>
