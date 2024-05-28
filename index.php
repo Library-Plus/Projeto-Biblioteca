@@ -11,16 +11,15 @@
 		?>
 		
 		<header>
-			<div class="cabecalho">
+			<div class="cabecalho-index">
 				<img class="logo" src="imagens/logo.png" alt="logo">
 			</div>
-			<div class="cabecalho">
+			<div class="cabecalho-index">
 				<div class="teste">
 					<h1>  Lib+ </h1>
 				</div>
 			</div>
-			<div class="quebra">
-			</div>
+			<div class="quebra"></div>
 		</header>
 
         <div class="form-login <?php if($erro == 1){ echo 'has-error';}?>">
@@ -32,7 +31,7 @@
 				<label for="senha">Senha:</label><br>
 				<input type="password" name="senha" id="senha" maxlength="100"><br><br>
 
-				<button type="submit">Entrar</button>
+				<input class="entrar" type="image" name="submit" src="imagens/entrar.png" alt="submit">
 			</form>
 		</div>
 		<div class="div-erro">

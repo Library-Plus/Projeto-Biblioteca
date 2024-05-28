@@ -1,32 +1,37 @@
+<?php
+	include('conexao.php');
+?>
 <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
 <body>
     <header>
-        <div class="teste">
-            <div class="cabecalho">
-                <a href="menu.php"><img class="logo" src="imagens/logo.png" alt="logo"></a>
-	        </div>
-	        <div class="cabecalho">
-		        <h1>  Lib+ </h1>
-	        </div>
-	        <div class="quebra"></div>
-        </div>
-        <div class="teste">
-            <div class="menu">
+        <div class="cabecalho">
+             <a class="link-menu" href="menu.php"><img class="logo" src="imagens/logo.png" alt="logo"></a>
+	    </div>
+	    <div class="cabecalho">
+		     <h1>  Lib+ </h1>
+	    </div>
+	    <div class="quebra"></div>
+
+        <div class="menu">
             <table>
                 <thead>
                     <tr>
-                        <th><a href="listar_clientes.php">Clientes</a></th>
-                        <th><a href="listar_vendedores.php">Vendedores</a></th>
-                        <th><a href="listar_tipos.php">Tipos</a></th>
-                        <th><a href="listar_livros.php">Livros</a></th>
-                        <th><a href="listar_aluguel.php">Aluguel</a></th>
-                        <th><a href="listar_usuarios.php">Usuários</a></th>
-                        <th><a href="sair.php">Sair</a></th>
+                        <th><a class="link-menu" href="listar_clientes.php">Clientes</a></th>
+                        <th><a class="link-menu" href="listar_vendedores.php">Vendedores</a></th>
+                        <th><a class="link-menu" href="listar_tipos.php">Tipos</a></th>
+                        <th><a class="link-menu" href="listar_livros.php">Livros</a></th>
+                        <th><a class="link-menu" href="listar_aluguel.php">Aluguel</a></th>
+                        <th><a class="link-menu" href="listar_usuarios.php">Usuários</a></th>
+                        <th><a class="link-menu" href="sair.php">Sair</a></th>
                     </tr>
                 </thead>
             </table>
-            </div>
         </div>
+        <div class="user-box">
+			<img class="img-box" src="imagens/user.png" alt="user" > <br>
+			<p class="nome-box"> <?php echo $_SESSION['usuario']['nome'];?> </p><br>
+			<a href="sair.php"><img class="button-box" src="imagens/sair.png"></a>
+		</div>
     </header>
 </body>  
 <br><br>
