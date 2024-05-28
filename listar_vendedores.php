@@ -39,7 +39,7 @@
 					<td><?php echo $item['admissao']; ?></td>
 					<td><?php echo $item['status'] == 'A' ? 'Ativo' : 'Inativo'; ?></td>
 					<td>
-						<a href="alterar_vendedores.php?id=<?php echo $item['id']; ?>">Alterar</a>
+						<a href="alterar_vendedores.php?id=<?php echo $item['id']; ?>">Alterar</a><br>
 						<a href="excluir_vendedores.php?id=<?php echo $item['id']; ?>">Excluir</a>
 					</td>
 				</tr>

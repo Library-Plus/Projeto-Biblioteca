@@ -68,7 +68,7 @@
 					<td><?php echo $item['nome']; ?></td>
 					<td><?php echo $item['usuario']; ?></td>
 					<td>
-						<a href="alterar_usuarios.php?id=<?php echo $item['id']; ?>">Alterar</a>
+						<a href="alterar_usuarios.php?id=<?php echo $item['id']; ?>">Alterar</a><br>
 						<a href="excluir_usuarios.php?id=<?php echo $item['id']; ?>">Excluir</a>
 					</td>
 				</tr>

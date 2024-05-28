@@ -46,7 +46,7 @@
 					<td><?php echo $item['id_vendedor']; ?></td>
 					<td><?php echo $item['nome_vendedor']; ?></td>
 					<td>
-						<a href="alterar_aluguel.php?id=<?php echo $item['id']; ?>">Alterar</a>
+						<a href="alterar_aluguel.php?id=<?php echo $item['id']; ?>">Alterar</a><br>
 						<a href="excluir_aluguel.php?id=<?php echo $item['id']; ?>">Excluir</a>
 					</td>
 				</tr>

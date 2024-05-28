@@ -36,12 +36,12 @@
 				<tr>
 					<td><?php echo $item['id']; ?></td>
 					<td><?php echo $item['titulo']; ?></td>
-					<td><img src="capas/<?php echo $item['capa']; ?>" alt="<?php echo $item['titulo']; ?>"></td>
+					<td><img class="capa" src="capas/<?php echo $item['capa']; ?>" alt="<?php echo $item['titulo']; ?>"></td>
 					<td><?php echo $item['tipo']; ?></td>
 					<td><?php echo $item['sinopse']; ?></td>
 					<td><?php echo $item['status'] == 'A' ? 'Ativo' : 'Inativo'; ?></td>
 					<td>
-						<a href="alterar_livros.php?id=<?php echo $item['id']; ?>">Alterar</a>
+						<a href="alterar_livros.php?id=<?php echo $item['id']; ?>">Alterar</a><br>
 						<a href="excluir_livros.php?id=<?php echo $item['id']; ?>">Excluir</a>
 					</td>
 				</tr>

@@ -43,7 +43,7 @@ body{
   border-radius: 15px;
   width: 14%;
   padding: 0px 0px 10px 0px;
-  margin: 5px 0px 0px 530px;
+  margin: 5px 0px 0px 510px;
 }
 .img-box {
   margin: 2% 0% 0% 6%;
@@ -54,7 +54,7 @@ body{
   font-weight: bold;
 }
 .button-box {
-  width: 35px;
+  width: 30px;
   margin: 40% 0% 0% 20%;
 }
 .button-painel {
@@ -73,7 +73,7 @@ body{
   margin-left: 360px;
 }
 label{
-  font-weight: bold;
+  font-weight: normal;
 }
 .logo{
   height: 50px;
@@ -109,7 +109,7 @@ label{
 .link-menu{
   color: black;
   margin-left: 10px;
-  border-radius: 15px;
+  border-radius: 3px;
   background-color: white;
   text-decoration: none;
   font-weight: normal;
@@ -123,6 +123,10 @@ label{
 .formulario{
   padding: 0% 0% 0% 26%;
   margin-bottom: 30px;
+  padding: 0px;
+  margin-left: 45px;
+  border-radius: 0px;
+  border: 0px solid #2ba5f7;
 }
 header{
   display: flex;
@@ -141,8 +145,8 @@ h1{
   height: 80px;
   border-collapse: collapse;
 }
-td{
-  padding-left: 145px;
+th {
+  text-align: left;
 }
 .tabela thead{
   background-color: #2ba5f7;
@@ -165,4 +169,14 @@ a{
   background-color: white;
   text-decoration: none;
   font-weight: normal;
+}
+form {
+  width: 20%;
+  padding: 20px;
+  margin-left: 500px;
+  border-radius: 15px;
+  border: 1px solid #2ba5f7;
+}
+.capa {
+  width: 70px;
 }

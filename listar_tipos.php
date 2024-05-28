@@ -31,7 +31,7 @@
 					<td><?php echo $item['id']; ?></td>
 					<td><?php echo $item['genero']; ?></td>
 					<td>
-						<a href="alterar_tipos.php?id=<?php echo $item['id']; ?>">Alterar</a>
+						<a href="alterar_tipos.php?id=<?php echo $item['id']; ?>">Alterar</a><br>
 						<a href="excluir_tipos.php?id=<?php echo $item['id']; ?>">Excluir</a>
 					</td>
 				</tr>
