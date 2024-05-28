@@ -1,5 +1,6 @@
 <?php
 	include('conexao.php');
+	include('validar.php');
 	$id = $_GET['id'];
 	$sql = "SELECT * FROM usuario WHERE id = {$id}";
 	$query = mysqli_query($conexao, $sql);

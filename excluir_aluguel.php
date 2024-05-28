@@ -1,5 +1,6 @@
 <?php
 	include('conexao.php');
+	include('validar.php');
 	$id = $_GET['id'];
 	$sql = "SELECT id, id_cliente, id_vendedor, data_venda FROM aluguel";
 	$query = mysqli_query($conexao, $sql);
