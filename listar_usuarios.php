@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="pt=br">
 	<head>
-		<title></title>
+		<title>Lib+ Soluções</title>
 	</head>
 	<body>
 		<?php include('menu.php'); ?>

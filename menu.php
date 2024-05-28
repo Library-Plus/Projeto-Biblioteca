@@ -2,6 +2,9 @@
 	include('conexao.php');
 ?>
 <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+<head>
+    <title>Lib+ Soluções</title>
+</head>
 <body>
     <header>
         <div class="cabecalho">

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title></title>
+        <title>Lib+ Soluções</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
     </head>
     <body>
