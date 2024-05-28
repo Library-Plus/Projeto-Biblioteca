@@ -12,7 +12,7 @@
 		
 		<header>
 			<div class="cabecalho-index">
-				<img class="logo-index" src="imagens/logo.png" alt="logo">
+				<img class="logo" src="imagens/logo.png" alt="logo">
 			</div>
 			<div class="cabecalho-index">
 				<div class="teste">

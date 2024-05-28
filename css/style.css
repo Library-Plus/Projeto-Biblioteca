@@ -77,7 +77,7 @@ label{
 }
 .logo-index{
   height: 50px;
-  margin-left: 10px;
+  margin-left: 0px;
 }
 .logoMenu{
   float: left;
@@ -127,7 +127,7 @@ label{
 }
 header{
   display: flex;
-  background-color: white;
+  background-color: #ffffff;
   border: 1px #E8E8E8 solid;
   padding-bottom: 10px;
 }

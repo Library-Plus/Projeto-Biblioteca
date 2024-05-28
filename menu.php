@@ -5,7 +5,7 @@
 <body>
     <header>
         <div class="cabecalho">
-             <a class="link-menu" href="menu.php"><img class="logo" src="imagens/logo.png" alt="logo"></a>
+             <img class="logo" src="imagens/logo.png" alt="logo">
 	    </div>
 	    <div class="cabecalho">
 		     <h1>  Lib+ </h1>
