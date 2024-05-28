@@ -15,6 +15,7 @@
 				<tr>
 					<th>Código</th>
 					<th>Título</th>
+					<th>Capa</th>
 					<th>Gênero</th>
 					<th>Sinopse</th>
 					<th>Status</th>
@@ -23,7 +24,7 @@
 			</thead>
 			<tbody>
 			<?php
-				$sql = 'SELECT livro.id, livro.titulo, tipo.genero AS tipo, livro.sinopse, livro.status
+				$sql = 'SELECT livro.id, livro.titulo, livro.capa, tipo.genero AS tipo, livro.sinopse, livro.status
 				FROM livro
 				JOIN tipo ON livro.id_tipo = tipo.id'; 
 				$query = mysqli_query($conexao, $sql);
@@ -35,6 +36,7 @@
 				<tr>
 					<td><?php echo $item['id']; ?></td>
 					<td><?php echo $item['titulo']; ?></td>
+					<td><img src="capas/<?php echo $item['capa']; ?>" alt="<?php echo $item['titulo']; ?>"></td>
 					<td><?php echo $item['tipo']; ?></td>
 					<td><?php echo $item['sinopse']; ?></td>
 					<td><?php echo $item['status'] == 'A' ? 'Ativo' : 'Inativo'; ?></td>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 27/05/2024 às 05:26
+-- Tempo de geração: 28/05/2024 às 22:47
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -34,13 +34,6 @@ CREATE TABLE `aluguel` (
   `data_venda` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
---
--- Despejando dados para a tabela `aluguel`
---
-
-INSERT INTO `aluguel` (`id`, `id_cliente`, `id_vendedor`, `data_venda`) VALUES
-(4, 1, 2, '2024-05-01 00:00:00');
-
 -- --------------------------------------------------------
 
 --
@@ -51,13 +44,6 @@ CREATE TABLE `aluguel_livro` (
   `id_venda` int(11) NOT NULL,
   `id_livro` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
-
---
--- Despejando dados para a tabela `aluguel_livro`
---
-
-INSERT INTO `aluguel_livro` (`id_venda`, `id_livro`) VALUES
-(4, 2);
 
 -- --------------------------------------------------------
 
@@ -79,7 +65,7 @@ CREATE TABLE `cliente` (
 --
 
 INSERT INTO `cliente` (`id`, `nome`, `email`, `telefone`, `cpf`, `status`) VALUES
-(1, 'Gabriel', 'gabrielpatricioxyz@gmail.com', '48991554419', '11827835974', 'A');
+(1, 'Gabriel', 'gabriel@gmail.com', '11911111111', '11827835974', 'A');
 
 -- --------------------------------------------------------
 
@@ -91,16 +77,10 @@ CREATE TABLE `livro` (
   `id` int(11) NOT NULL,
   `id_tipo` int(11) NOT NULL,
   `titulo` varchar(100) NOT NULL,
+  `capa` varchar(200) NOT NULL,
   `sinopse` text NOT NULL,
   `status` char(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
-
---
--- Despejando dados para a tabela `livro`
---
-
-INSERT INTO `livro` (`id`, `id_tipo`, `titulo`, `sinopse`, `status`) VALUES
-(2, 2, 'Star Wars o Retorno do Jedi', 'Luke mata vader', 'A');
 
 -- --------------------------------------------------------
 
@@ -229,13 +209,13 @@ ALTER TABLE `aluguel`
 -- AUTO_INCREMENT de tabela `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `livro`
 --
 ALTER TABLE `livro`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de tabela `tipo`

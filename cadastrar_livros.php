@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<?php include('menu.php'); ?>
-		<form action="cadastrar_livros_db.php" method="post">
+		<form action="cadastrar_livros_db.php" method="post" enctype="multipart/form-data">
 			<label for="titulo">Titulo:</label><br>
 			<input type="text" name="titulo" id="titulo" maxlength="150"><br><br>
 			
@@ -25,6 +25,9 @@
 					}
 				?>
 			</select><br><br>
+
+			<label for="capa">Capa:</label><br>
+			<input type="file" name="capa" id="capa"><br><br>
 
 			<label for="sinopse">Sinopse:</label><br>
 			<textarea name="sinopse" id="sinopse"></textarea><br><br>
