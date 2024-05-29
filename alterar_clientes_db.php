@@ -1,5 +1,6 @@
 <?php
 	include('conexao.php');
+	include('validar.php');
 	
 	$id = $_POST['id'];
 	$nome = $_POST['nome'];

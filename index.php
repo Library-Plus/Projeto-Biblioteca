@@ -15,21 +15,29 @@
 				<img class="logo" src="imagens/logo.png" alt="logo">
 			</div>
 			<div class="cabecalho-index">
-				<div class="teste">
-					<h1>  Lib+ </h1>
-				</div>
+				<h1>  Lib+ </h1>
 			</div>
 			<div class="quebra"></div>
 		</header>
 
         <div class="form-login <?php if($erro == 1){ echo 'has-error';}?>">
-		<img class="user" src="imagens/user.png" alt="user" >
+			<img class="user" src="imagens/user.png" alt="user" >
 			<form class="formulario" action="login_db.php" method="post">
-				<label for="usuario">Usuário:</label><br>
-				<input class="id" type="text" name="usuario" id="usuario" maxlength="50"><br><br>
+				<div class="login-id">
+					<img class="button-id" src="imagens/id.png" alt="id">
+				</div>
+				<div class="login-sid">
+					<input class="id" type="text" name="usuario" id="usuario" maxlength="50"><br><br>
+				</div>
+				<div class="quebra"></div>
 				
-				<label for="senha">Senha:</label><br>
-				<input class="senha" type="password" name="senha" id="senha" maxlength="100"><br><br>
+				<div class="login-senha">
+					<img class="button-senha" src="imagens/senha.png" alt="senha">
+				</div>
+				<div class="login-senha">
+					<input class="senha" type="password" name="senha" id="senha" maxlength="100"><br><br>
+				</div>
+				<div class="quebra"></div>
 
 				<input class="entrar" type="image" name="submit" src="imagens/entrar.png" alt="submit">
 			</form>

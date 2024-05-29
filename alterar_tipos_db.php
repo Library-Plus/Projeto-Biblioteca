@@ -1,5 +1,6 @@
 <?php
 	include('conexao.php');
+	include('validar.php');
 ?>
 <!DOCTYPE html>
 <html lang="pt=br">
@@ -18,7 +19,7 @@
 			if (!$query) {
 				echo 'Não foi possível alterar o Tipo! Erro no banco: ' . mysqli_error($conexao);
 			} else {
-				echo 'Tipo alterado com sucesso! Código ' . $id;
+				echo '<p class="mensagem-cadastro"> Tipo alterado com sucesso! <img class="gif" src="imagens/sucesso.gif" alt="gif"> <br> Código '.$id.' <br> <a href="listar_tipos.php"><img class="button-fechar" src="imagens/fechar.png"></a></p>';
 			}
 		?>
 	</body>

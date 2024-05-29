@@ -33,11 +33,11 @@
 			<span class="ok">
 				<?php
 					if ($ok == 1) {
-						echo 'Usuário cadastrado com sucesso! Código ' . $msg;
+						echo '<p class="mensagem-cadastro"> Usuário cadastrado com sucesso! <img class="gif" src="imagens/sucesso.gif" alt="gif"> <br> Código '.$msg.' <br> <a href="listar_usuarios.php"><img class="button-fechar" src="imagens/fechar.png"></a></p>';
 					} else if($ok == 2) {
-						echo 'Usuário alterado com sucesso! Código ' . $msg;
+						echo '<p class="mensagem-cadastro"> Usuário alterado com sucesso! <img class="gif" src="imagens/sucesso.gif" alt="gif"> <br> Código '.$msg.' <br> <a href="listar_usuarios.php"><img class="button-fechar" src="imagens/fechar.png"></a></p>';
 					} else if($ok == 3) {
-						echo 'Usuário excluído com sucesso! Código ' . $msg;
+						echo '<p class="mensagem-cadastro"> Usuário excluído com sucesso! <img class="gif" src="imagens/sucesso.gif" alt="gif"> <br> Código '.$msg.' <br> <a href="listar_usuarios.php"><img class="button-fechar" src="imagens/fechar.png"></a></p>';
 					}
 				?>
 			</span><br><br>

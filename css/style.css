@@ -63,6 +63,12 @@ body{
   width: 35px;
   margin-left: 20%;
 }
+.button-senha {
+  width: 35px;
+}
+.button-id {
+  width: 35px;
+}
 .erro {
   font-weight: bold;
   padding: 2px;
@@ -171,12 +177,12 @@ a{
   text-decoration: none;
   font-weight: normal;
 }
-form {
+.cadastro {
   background-color: #f3f3f3;
   position: absolute;
-  width: 12%;
+  width: 17%;
   top: 50%;
-  left: 50%;
+  left: 48%;
   margin: -200px 0px 0px -150px;
   padding-left: 40px;
   padding-top: 40px;
@@ -187,15 +193,43 @@ form {
 .capa {
   width: 70px;
 }
-input.senha {
-  width: 300%;
-}
 input.id {
-  width: 300%;
+  margin: 1px;
+  width: 160px;
+  height: 27px;
 }
+input.senha {
+  margin: 1px;
+  width: 160px;
+  height: 27px;
+} 
 select{
   background-color: #f3f3f3;
   border: 0px;
   border-bottom: 2px solid black;
   font-weight: bold;
+}
+.mensagem-cadastro{
+  background-color: white;
+  position: absolute;
+  width: 15%;
+  top: 50%;
+  left: 50%;
+  margin: -200px 0px 0px -150px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.gif {
+  width: 20%;
+}
+.button-fechar {
+  margin: 10px;
+  width: 16%;
+}
+.login-id{
+  float: left;
+}
+.login-senha {
+  float: left;
 }

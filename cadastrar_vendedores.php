@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<?php include('menu.php'); ?>
-		<form action="cadastrar_vendedores_db.php" method="post">
+		<form class="cadastro" action="cadastrar_vendedores_db.php" method="post">
 			<label for="nome">Nome</label><br>
 			<input type="text" name="nome" id="nome" maxlength="200"><br><br>
 			

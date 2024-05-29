@@ -12,7 +12,7 @@
 		<?php include('menu.php'); ?>
 
 
-		<form action="cadastrar_aluguel_db.php" method="post">
+		<form class="cadastro" action="cadastrar_aluguel_db.php" method="post">
 			<label for="id_cliente">Cliente:</label><br>
 			<select name="id_cliente" id="id_cliente">
 				<?php

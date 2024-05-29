@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<?php include('menu.php'); ?>
-		<form action="cadastrar_livros_db.php" method="post" enctype="multipart/form-data">
+		<form class="cadastro" action="cadastrar_livros_db.php" method="post" enctype="multipart/form-data">
 			<label for="titulo">Titulo:</label><br>
 			<input type="text" name="titulo" id="titulo" maxlength="150"><br><br>
 			

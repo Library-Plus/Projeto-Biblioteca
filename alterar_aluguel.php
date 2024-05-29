@@ -19,7 +19,7 @@
 	</head>
 	<body>
 		<?php include('menu.php'); ?>		
-		<form action="alterar_aluguel.php?id=<?php echo $id; ?>" method="post">
+		<form class="cadastro" action="alterar_aluguel.php?id=<?php echo $id; ?>" method="post">
 			<label for="livros">Quantas livros?</label>
 			<input type="number" name="livros" id="livros" value="<?php echo $livros; ?>" max="5" min="0">
 			<button type="submit">Gerar</button>

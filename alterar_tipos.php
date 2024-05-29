@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		<?php include('menu.php'); ?>
-		<form action="alterar_tipos_db.php" method="post">
+		<form class="cadastro" action="alterar_tipos_db.php" method="post">
 			<label>Código:</label><br>
 			<input type="hidden" name="id" value="<?php echo $id; ?>">
 			<?php echo $id; ?><br><br>

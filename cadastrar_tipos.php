@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<?php include('menu.php'); ?>
-		<form action="cadastrar_tipos_db.php" method="post">
+		<form class="cadastro" action="cadastrar_tipos_db.php" method="post">
 			<label for="genero">Gênero:</label><br>
 			<input type="text" name="genero" id="genero" maxlength="50"><br><br>
 			

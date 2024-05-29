@@ -18,7 +18,7 @@
 			if (!$query) {
 				echo 'Não foi possível excluir o Vendedor! Erro no banco: ' . mysqli_error($conexao);
 			} else {
-				echo 'Vendedor excluído com sucesso! Código ' . $id;
+				echo '<p class="mensagem-cadastro"> Vendedor excluído com sucesso! <img class="gif" src="imagens/sucesso.gif" alt="gif"> <br> Código '.$id.' <br> <a href="listar_vendedores.php"><img class="button-fechar" src="imagens/fechar.png"></a></p>';
 			}
 		?>
 	</body>
