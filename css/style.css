@@ -1,8 +1,8 @@
 body{
   background: white;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Calibri', monospace;
   font-style: normal;
-  font-size: 16px;
+  font-size: 19px;
   margin: 0px;
 }
 .form-login{
@@ -10,7 +10,7 @@ body{
   border-radius: 30px;
   width: 20%;
   margin-left: 38%;
-  margin-top: 180px;
+  margin-top: 9.05%;
 }
 .form-login.has-error{
   border: 2px red solid;
@@ -25,7 +25,7 @@ body{
   width: 20%;
   padding: 0px 0px 50px 0px;
   margin-left: 38%;
-  margin-top: 147px;
+  margin-top: 6.55%;
 }
 .user-painel{
   margin: 8% 0% 0% 34%;
@@ -38,12 +38,14 @@ body{
   text-align: center;
 }
 .user-box {
+  position: fixed;
+  right: 0;
   display: flex;
   border: 1px #2ba5f7 solid;
   border-radius: 15px;
   width: 14%;
   padding: 0px 0px 10px 0px;
-  margin: 5px 0px 0px 510px;
+  margin: 0.2%;
 }
 .img-box {
   margin: 2% 0% 0% 6%;
@@ -55,11 +57,11 @@ body{
 }
 .button-box {
   width: 30px;
-  margin: 40% 0% 0% 20%;
+  margin: 50% 0% 0% 20%;
 }
 .button-painel {
   width: 35px;
-  margin-left: 25px;
+  margin-left: 20%;
 }
 .erro {
   font-weight: bold;
@@ -121,10 +123,9 @@ label{
   font-weight: normal;
 }
 .formulario{
-  padding: 0% 0% 0% 26%;
+  padding: 0px 0px 0px 0px;
   margin-bottom: 30px;
-  padding: 0px;
-  margin-left: 45px;
+  margin-left: 20%;
   border-radius: 0px;
   border: 0px solid #2ba5f7;
 }
@@ -171,12 +172,30 @@ a{
   font-weight: normal;
 }
 form {
-  width: 20%;
-  padding: 20px;
-  margin-left: 500px;
+  background-color: #f3f3f3;
+  position: absolute;
+  width: 12%;
+  top: 50%;
+  left: 50%;
+  margin: -200px 0px 0px -150px;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   border-radius: 15px;
-  border: 1px solid #2ba5f7;
+  border: 1px solid black;
 }
 .capa {
   width: 70px;
+}
+input.senha {
+  width: 300%;
+}
+input.id {
+  width: 300%;
+}
+select{
+  background-color: #f3f3f3;
+  border: 0px;
+  border-bottom: 2px solid black;
+  font-weight: bold;
 }

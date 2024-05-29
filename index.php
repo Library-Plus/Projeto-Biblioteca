@@ -26,10 +26,10 @@
 		<img class="user" src="imagens/user.png" alt="user" >
 			<form class="formulario" action="login_db.php" method="post">
 				<label for="usuario">Usuário:</label><br>
-				<input type="text" name="usuario" id="usuario" maxlength="50"><br><br>
+				<input class="id" type="text" name="usuario" id="usuario" maxlength="50"><br><br>
 				
 				<label for="senha">Senha:</label><br>
-				<input type="password" name="senha" id="senha" maxlength="100"><br><br>
+				<input class="senha" type="password" name="senha" id="senha" maxlength="100"><br><br>
 
 				<input class="entrar" type="image" name="submit" src="imagens/entrar.png" alt="submit">
 			</form>
