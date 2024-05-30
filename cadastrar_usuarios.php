@@ -24,6 +24,12 @@
 			
 			<label for="senha">Senha:</label><br>
 			<input type="password" name="senha" id="senha" maxlength="20"><br><br>
+
+			<label for="tipo">Tipo de Usuário:</label><br>
+			<select name="tipo" id="tipo">
+				<option value="Administrador">Administrador</option>
+				<option value="Usuário">Usuário Comum</option>
+			</select><br><br>
 			
 			<button type="submit">Cadastrar</button>
 		</form>

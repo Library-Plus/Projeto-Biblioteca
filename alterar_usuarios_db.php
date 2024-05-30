@@ -6,8 +6,9 @@
 	$nome = $_POST['nome'];
 	$usuario = $_POST['usuario'];
 	$senha = $_POST['senha'] ? " senha = '" . md5($_POST['senha']) . "'" : '';
+	$tipo = $_POST['tipo'];
 
-	$sql = "UPDATE usuario SET nome = '{$nome}', usuario = '{$usuario}', {$senha}  WHERE id = {$id}";
+	$sql = "UPDATE usuario SET nome = '{$nome}', usuario = '{$usuario}', {$senha}, tipo = '{$tipo}'WHERE id = {$id}";
 	$query = mysqli_query($conexao, $sql);
 	if (!$query) {
 		header('Location: listar_usuarios.php?erro=2&msg=' . mysqli_error($conexao));

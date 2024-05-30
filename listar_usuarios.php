@@ -51,12 +51,13 @@
 					<th>Código</th>
 					<th>Nome</th>
 					<th>Login</th>
+					<th>Tipo de Usuário</th>
 					<th>Ações</th>
 				</tr>
 			</thead>
 			<tbody class="tbody_tabela">
 			<?php
-				$sql = 'SELECT id, nome, usuario FROM usuario';
+				$sql = 'SELECT id, nome, usuario, tipo FROM usuario';
 				$query = mysqli_query($conexao, $sql);
 				if (!$query) {
 					echo 'Erro no banco: ' . mysqli_error($conexao);
@@ -67,6 +68,7 @@
 					<td><?php echo $item['id']; ?></td>
 					<td><?php echo $item['nome']; ?></td>
 					<td><?php echo $item['usuario']; ?></td>
+					<td><?php echo $item['tipo']; ?></td>
 					<td>
 						<a href="alterar_usuarios.php?id=<?php echo $item['id']; ?>">Alterar</a><br>
 						<a href="excluir_usuarios.php?id=<?php echo $item['id']; ?>">Excluir</a>
