@@ -57,7 +57,7 @@
 			</thead>
 			<tbody class="tbody_tabela">
 			<?php
-				$sql = 'SELECT id, nome, usuario FROM usuario';
+				$sql = 'SELECT id, nome, usuario, tipo FROM usuario';
 				$query = mysqli_query($conexao, $sql);
 				if (!$query) {
 					echo 'Erro no banco: ' . mysqli_error($conexao);
