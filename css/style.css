@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 body{
   background: white;
-  font-family: 'Calibri', monospace;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-size: 19px;
   margin: 0px;
@@ -179,11 +180,9 @@ a{
 }
 .cadastro {
   background-color: #f3f3f3;
-  position: absolute;
-  width: 17%;
-  top: 50%;
-  left: 48%;
-  margin: -200px 0px 0px -150px;
+  width: 610px;
+  height: 100%;
+  margin: 0 auto;
   padding-left: 40px;
   padding-top: 40px;
   padding-bottom: 40px;

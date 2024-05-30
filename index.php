@@ -46,9 +46,7 @@
 		<?php  if($erro) { ?>
 			<span class="erro">
 				<?php
-					if ($erro == 1) {
-						echo 'Usuário ou senha inválida!';
-					} else if($erro == 2) {
+					if($erro == 2) {
 						echo 'Não foi possível alterar o Cliente! Erro no banco: ' . $msg;
 					}
 				?>
