@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 29/05/2024 às 07:55
+-- Tempo de geração: 31/05/2024 às 00:47
 -- Versão do servidor: 10.4.32-MariaDB
--- Versão do PHP: 8.0.30
+-- Versão do PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -39,7 +39,7 @@ CREATE TABLE `aluguel` (
 --
 
 INSERT INTO `aluguel` (`id`, `id_cliente`, `id_vendedor`, `data_venda`) VALUES
-(6, 1, 6, '2024-05-28 00:00:00');
+(5, 1, 3, '2024-04-30 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -57,7 +57,7 @@ CREATE TABLE `aluguel_livro` (
 --
 
 INSERT INTO `aluguel_livro` (`id_venda`, `id_livro`) VALUES
-(6, 13);
+(5, 11);
 
 -- --------------------------------------------------------
 
@@ -79,9 +79,7 @@ CREATE TABLE `cliente` (
 --
 
 INSERT INTO `cliente` (`id`, `nome`, `email`, `telefone`, `cpf`, `status`) VALUES
-(1, 'Gabriel', 'gabriel@gmail.com', '11911111111', '00000000000', 'A'),
-(5, 'Raphael', 'rgValinhas@hotmail.com', '999919493', '08374531928', 'A'),
-(6, 'Jeffeson', 'jefferson@gmail.com', '988554721', '90835784520', 'A');
+(1, 'Gabriel', 'gabriel@gmail.com', '11911111111', '11827835974', 'A');
 
 -- --------------------------------------------------------
 
@@ -103,7 +101,7 @@ CREATE TABLE `livro` (
 --
 
 INSERT INTO `livro` (`id`, `id_tipo`, `titulo`, `capa`, `sinopse`, `status`) VALUES
-(13, 3, 'Naruto', '711MNMCnxRL-20240529075323._AC_UF1000,1000_QL80_', 'Naruto (ナルト) é uma série de mangá escrita e ilustrada por Masashi Kishimoto, que conta a história de Naruto Uzumaki, um jovem ninja que constantemente procura por reconhecimento e sonha em se tornar Hokage, o ninja líder de sua vila.', 'A');
+(11, 2, 'Star wars', 'retorno-20240528224836.jpg', 'aaaaa', 'A');
 
 -- --------------------------------------------------------
 
@@ -121,8 +119,7 @@ CREATE TABLE `tipo` (
 --
 
 INSERT INTO `tipo` (`id`, `genero`) VALUES
-(2, 'Ficção Ciêntifica'),
-(3, 'Manga');
+(2, 'Ficção Ciêntifica');
 
 -- --------------------------------------------------------
 
@@ -135,16 +132,17 @@ CREATE TABLE `usuario` (
   `nome` varchar(150) NOT NULL,
   `usuario` varchar(50) NOT NULL,
   `senha` varchar(100) NOT NULL,
-  `sexo` varchar(30) NOT NULL
+  `sexo` varchar(30) NOT NULL,
+  `tipo` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Despejando dados para a tabela `usuario`
 --
 
-INSERT INTO `usuario` (`id`, `nome`, `usuario`, `senha`, `sexo`) VALUES
-(3, 'Raphael', '', 'raphael', '202cb962ac59075b964b07152d234b'),
-(4, 'Gabriel', '', 'gabriel', '202cb962ac59075b964b07152d234b');
+INSERT INTO `usuario` (`id`, `nome`, `usuario`, `senha`, `sexo`, `tipo`) VALUES
+(1, 'Raphael', 'raphael', '202cb962ac59075b964b07152d234b70', '', 'Administrador'),
+(7, 'Gabriel', 'gabriel', '202cb962ac59075b964b07152d234b70', '202cb962ac59075b964b07152d234b', 'Usuário Comum');
 
 -- --------------------------------------------------------
 
@@ -167,7 +165,8 @@ CREATE TABLE `vendedor` (
 --
 
 INSERT INTO `vendedor` (`id`, `nome`, `endereco`, `telefone`, `cpf`, `admissao`, `status`) VALUES
-(6, 'Jeffeson', 'aa', '988554721', '08374531928', '0000-00-00 00:00:00', 'A');
+(3, 'Raphael Caetano Garcia Valinhas', 'Rua Palamede Milioli', '48999542837', '444.444.444-44', '0000-00-00 00:00:00', 'A'),
+(6, 'Gabriel', 'rua mariano procopio', '48999542837', '444.444.444-33', '0000-00-00 00:00:00', 'A');
 
 --
 -- Índices para tabelas despejadas
@@ -227,31 +226,31 @@ ALTER TABLE `vendedor`
 -- AUTO_INCREMENT de tabela `aluguel`
 --
 ALTER TABLE `aluguel`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de tabela `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `livro`
 --
 ALTER TABLE `livro`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de tabela `tipo`
 --
 ALTER TABLE `tipo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de tabela `vendedor`
