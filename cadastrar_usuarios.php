@@ -27,8 +27,8 @@
 
 			<label for="tipo">Tipo de Usuário:</label><br>
 			<select name="tipo" id="tipo">
-				<option value="Administrador">Administrador</option>
-				<option value="Usuário">Usuário Comum</option>
+				<option value="1">Administrador</option>
+				<option value="2">Usuário Comum</option>
 			</select><br><br>
 			
 			<button type="submit">Cadastrar</button>

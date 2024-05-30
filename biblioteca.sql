@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Tempo de geração: 31/05/2024 às 00:47
--- Versão do servidor: 10.4.32-MariaDB
--- Versão do PHP: 8.2.12
+-- Host: localhost
+-- Generation Time: May 30, 2024 at 10:15 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `biblioteca`
+-- Database: `biblioteca`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `aluguel`
+-- Table structure for table `aluguel`
 --
 
 CREATE TABLE `aluguel` (
@@ -35,7 +35,7 @@ CREATE TABLE `aluguel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
--- Despejando dados para a tabela `aluguel`
+-- Dumping data for table `aluguel`
 --
 
 INSERT INTO `aluguel` (`id`, `id_cliente`, `id_vendedor`, `data_venda`) VALUES
@@ -44,7 +44,7 @@ INSERT INTO `aluguel` (`id`, `id_cliente`, `id_vendedor`, `data_venda`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `aluguel_livro`
+-- Table structure for table `aluguel_livro`
 --
 
 CREATE TABLE `aluguel_livro` (
@@ -53,7 +53,7 @@ CREATE TABLE `aluguel_livro` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
--- Despejando dados para a tabela `aluguel_livro`
+-- Dumping data for table `aluguel_livro`
 --
 
 INSERT INTO `aluguel_livro` (`id_venda`, `id_livro`) VALUES
@@ -62,7 +62,7 @@ INSERT INTO `aluguel_livro` (`id_venda`, `id_livro`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `cliente`
+-- Table structure for table `cliente`
 --
 
 CREATE TABLE `cliente` (
@@ -75,7 +75,7 @@ CREATE TABLE `cliente` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci COMMENT='Tabela para cadastro de Clientes da Biblioteca';
 
 --
--- Despejando dados para a tabela `cliente`
+-- Dumping data for table `cliente`
 --
 
 INSERT INTO `cliente` (`id`, `nome`, `email`, `telefone`, `cpf`, `status`) VALUES
@@ -84,7 +84,7 @@ INSERT INTO `cliente` (`id`, `nome`, `email`, `telefone`, `cpf`, `status`) VALUE
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `livro`
+-- Table structure for table `livro`
 --
 
 CREATE TABLE `livro` (
@@ -97,7 +97,7 @@ CREATE TABLE `livro` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
--- Despejando dados para a tabela `livro`
+-- Dumping data for table `livro`
 --
 
 INSERT INTO `livro` (`id`, `id_tipo`, `titulo`, `capa`, `sinopse`, `status`) VALUES
@@ -106,7 +106,7 @@ INSERT INTO `livro` (`id`, `id_tipo`, `titulo`, `capa`, `sinopse`, `status`) VAL
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `tipo`
+-- Table structure for table `tipo`
 --
 
 CREATE TABLE `tipo` (
@@ -115,7 +115,7 @@ CREATE TABLE `tipo` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
--- Despejando dados para a tabela `tipo`
+-- Dumping data for table `tipo`
 --
 
 INSERT INTO `tipo` (`id`, `genero`) VALUES
@@ -124,7 +124,7 @@ INSERT INTO `tipo` (`id`, `genero`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `usuario`
+-- Table structure for table `usuario`
 --
 
 CREATE TABLE `usuario` (
@@ -133,21 +133,22 @@ CREATE TABLE `usuario` (
   `usuario` varchar(50) NOT NULL,
   `senha` varchar(100) NOT NULL,
   `sexo` varchar(30) NOT NULL,
-  `tipo` varchar(200) NOT NULL
+  `tipo` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
--- Despejando dados para a tabela `usuario`
+-- Dumping data for table `usuario`
 --
 
 INSERT INTO `usuario` (`id`, `nome`, `usuario`, `senha`, `sexo`, `tipo`) VALUES
-(1, 'Raphael', 'raphael', '202cb962ac59075b964b07152d234b70', '', 'Administrador'),
-(7, 'Gabriel', 'gabriel', '202cb962ac59075b964b07152d234b70', '202cb962ac59075b964b07152d234b', 'Usuário Comum');
+(1, 'Raphael', 'raphael', '202cb962ac59075b964b07152d234b70', 'Masculino', 1),
+(7, 'Gabriel', 'gabriel', '202cb962ac59075b964b07152d234b70', 'Masculino', 1),
+(11, 'leonardo', 'leonardo', '202cb962ac59075b964b07152d234b70', 'm', 2);
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `vendedor`
+-- Table structure for table `vendedor`
 --
 
 CREATE TABLE `vendedor` (
@@ -161,7 +162,7 @@ CREATE TABLE `vendedor` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci COMMENT='Tabela para cadastro de Vendedores da Biblioteca';
 
 --
--- Despejando dados para a tabela `vendedor`
+-- Dumping data for table `vendedor`
 --
 
 INSERT INTO `vendedor` (`id`, `nome`, `endereco`, `telefone`, `cpf`, `admissao`, `status`) VALUES
@@ -169,11 +170,11 @@ INSERT INTO `vendedor` (`id`, `nome`, `endereco`, `telefone`, `cpf`, `admissao`,
 (6, 'Gabriel', 'rua mariano procopio', '48999542837', '444.444.444-33', '0000-00-00 00:00:00', 'A');
 
 --
--- Índices para tabelas despejadas
+-- Indexes for dumped tables
 --
 
 --
--- Índices de tabela `aluguel`
+-- Indexes for table `aluguel`
 --
 ALTER TABLE `aluguel`
   ADD PRIMARY KEY (`id`),
@@ -181,103 +182,103 @@ ALTER TABLE `aluguel`
   ADD KEY `fk_venda_x_vendedor` (`id_vendedor`);
 
 --
--- Índices de tabela `aluguel_livro`
+-- Indexes for table `aluguel_livro`
 --
 ALTER TABLE `aluguel_livro`
   ADD KEY `fk_venda_livro_x_venda` (`id_venda`),
   ADD KEY `fk_venda_livro_x_livro` (`id_livro`);
 
 --
--- Índices de tabela `cliente`
+-- Indexes for table `cliente`
 --
 ALTER TABLE `cliente`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `livro`
+-- Indexes for table `livro`
 --
 ALTER TABLE `livro`
   ADD PRIMARY KEY (`id`),
   ADD KEY `fk_livro_x_tipo` (`id_tipo`);
 
 --
--- Índices de tabela `tipo`
+-- Indexes for table `tipo`
 --
 ALTER TABLE `tipo`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `usuario`
+-- Indexes for table `usuario`
 --
 ALTER TABLE `usuario`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `vendedor`
+-- Indexes for table `vendedor`
 --
 ALTER TABLE `vendedor`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT para tabelas despejadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de tabela `aluguel`
+-- AUTO_INCREMENT for table `aluguel`
 --
 ALTER TABLE `aluguel`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT de tabela `cliente`
+-- AUTO_INCREMENT for table `cliente`
 --
 ALTER TABLE `cliente`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT de tabela `livro`
+-- AUTO_INCREMENT for table `livro`
 --
 ALTER TABLE `livro`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT de tabela `tipo`
+-- AUTO_INCREMENT for table `tipo`
 --
 ALTER TABLE `tipo`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT de tabela `usuario`
+-- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT de tabela `vendedor`
+-- AUTO_INCREMENT for table `vendedor`
 --
 ALTER TABLE `vendedor`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- Restrições para tabelas despejadas
+-- Constraints for dumped tables
 --
 
 --
--- Restrições para tabelas `aluguel`
+-- Constraints for table `aluguel`
 --
 ALTER TABLE `aluguel`
   ADD CONSTRAINT `fk_venda_x_cliente` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `fk_venda_x_vendedor` FOREIGN KEY (`id_vendedor`) REFERENCES `vendedor` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Restrições para tabelas `aluguel_livro`
+-- Constraints for table `aluguel_livro`
 --
 ALTER TABLE `aluguel_livro`
   ADD CONSTRAINT `fk_venda_livro_x_livro` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `fk_venda_livro_x_venda` FOREIGN KEY (`id_venda`) REFERENCES `aluguel` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Restrições para tabelas `livro`
+-- Constraints for table `livro`
 --
 ALTER TABLE `livro`
   ADD CONSTRAINT `fk_livro_x_tipo` FOREIGN KEY (`id_tipo`) REFERENCES `tipo` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
