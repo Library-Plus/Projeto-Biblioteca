@@ -1,17 +1,9 @@
-<?php
-
-  // A sessão precisa ser iniciada em cada página diferente
-  if (!isset($_SESSION)) session_start();
-
-  // Verifica se não há a variável da sessão que identifica o usuário
-  if (!isset($_SESSION["UsuarioID"])) {
-      // Destrói a sessão por segurança
-      session_destroy();
-      // Redireciona o visitante de volta pro login
-      header("Location: index.php"); exit;
+<?php 
+  include("conexao.php");
+	$sql_tipo = "SELECT * FROM usuario WHERE id=".$_SESSION['usuario']['id'];
+	$query_tipo = mysqli_query($conexao, $sql_tipo);
+	$item_tipo = mysqli_fetch_array($query_tipo, MYSQLI_ASSOC);
+  if ($item_tipo['tipo'] == 2){
+    header('Location: error.php');
   }
-
-  ?>
-
-  <h1>Página restrita</h1>
-  <p>Olá, <?php echo $_SESSION["UsuarioNome"]; ?>!</p>
+?>

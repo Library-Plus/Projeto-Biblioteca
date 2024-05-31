@@ -16,9 +16,11 @@
 			$endereco = $_POST['endereco'];
 			$telefone = $_POST['telefone'];
 			$cpf = $_POST['cpf'];
+			$admissao = $_POST['admissao'];
+			$admissao_hora = $_POST['admissao_hora'];
 			$status = $_POST['status'];
 
-			$sql = "UPDATE vendedor SET nome = '{$nome}', endereco = '{$endereco}', telefone = '{$telefone}', cpf = '{$cpf}', status = '{$status}' WHERE id = {$id}";
+			$sql = "UPDATE vendedor SET nome = '{$nome}', endereco = '{$endereco}', telefone = '{$telefone}', cpf = '{$cpf}', admissao = '{$admissao} {$admissao_hora}', status = '{$status}' WHERE id = {$id}";
 			$query = mysqli_query($conexao, $sql);
 			if (!$query) {
 				echo 'Não foi possível alterar o Vendedeor! Erro no banco: ' . mysqli_error($conexao);

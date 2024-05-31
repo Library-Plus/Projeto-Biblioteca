@@ -29,6 +29,9 @@
 			
 			<label for="cpf">CPF:</label><br>
 			<input type="text" name="cpf" id="cpf" maxlength="14" value="<?php echo $item['cpf']; ?>"><br><br>
+
+			<label for="data_coleta">Data Admissão:</label><br>
+			<input type="date" name="admissao" id="admissao" value="<?php echo $admissao[0]; ?>"><input type="time" name="admissao_hora" id="admissao_hora" value="<?php echo $admissao[1]; ?>"><br><br>
 			
 			<label for="status">Status:</label><br>
 			<select name="status" id="status">

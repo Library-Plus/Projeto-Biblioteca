@@ -16,9 +16,10 @@
 			$telefone= $_POST['telefone'];
 			$cpf = $_POST['cpf'];
 			$admissao = $_POST['admissao'];
+			$admissao_hora = $_POST['admissao_hora'];
 			$status = $_POST['status'];
 
-			$sql = "INSERT INTO vendedor VALUES (null, '{$nome}', '{$endereco}', '{$telefone}', '{$cpf}', '{$admissao}', '{$status}')";
+			$sql = "INSERT INTO vendedor VALUES (null, '{$nome}', '{$endereco}', '{$telefone}', '{$cpf}', '{$admissao} {$admissao_hora}', '{$status}')";
 			$query = mysqli_query($conexao, $sql);
 			if (!$query) {
 				echo 'Não foi possível cadastrar o Vendedor! Erro no banco: ' . mysqli_error($conexao);
