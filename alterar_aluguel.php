@@ -26,11 +26,11 @@
 		</form>
 
 		<form action="alterar_aluguel_db.php" method="post">
-			<label>Código:</label><br>
+			<label>Código</label><br>
 			<input type="hidden" name="id" value="<?php echo $id; ?>">
 			<?php echo $id; ?><br><br>
 			
-			<label for="id_cliente">Cliente:</label><br>
+			<label for="id_cliente">Cliente</label><br>
 			<select name="id_cliente" id="id_cliente">
 				<?php
 					$sql = 'SELECT id, nome FROM cliente';
@@ -43,7 +43,7 @@
 				?>
 			</select><br><br>
 		
-			<label for="data_venda">Data Venda:</label><br>
+			<label for="data_venda">Data Venda</label><br>
 			<input type="date" name="data_venda" id="data_venda" value="<?php echo $data_venda[0]; ?>"><br><br>
 
 			<table>

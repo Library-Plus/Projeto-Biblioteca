@@ -13,6 +13,7 @@
             <p>Deixe aqui seu feedback sobre sua experiência com o atendimento, local, condições do livros e oque podemos melhorar.</p>
             <p>Sua opinião é importante para o crescimento da nossa companhia, fica a vontade para falar.</p>
         </div>
+        <br>
 
             <form class="cadastro" method="post" enctype="text/plain" action="mailto:contato@libplus.com.br">
                 <label for="nome" class="nomeText">Nome</label><br>

@@ -23,7 +23,7 @@
 				if (!$query) {
 					echo 'Erro! Erro no banco: ' . mysqli_error($conexao);
 				} else {
-					echo '<p class="mensagem-cadastro"> Aluguel excluído com sucesso! <img class="gif" src="imagens/sucesso.gif" alt="gif"> <br> Código '.$id.' <br> <a href="listar_aluguel.php"><img class="button-fechar" src="imagens/fechar.png"></a></p>';
+					echo '<p class="mensagem-cadastro"> Aluguel excluído com sucesso!  <br> Código '.$id.' <br> <a href="listar_aluguel.php"><button class="btn-close">Voltar</button></a></p>';
 				}
 			}
 		?>

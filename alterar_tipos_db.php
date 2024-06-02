@@ -19,7 +19,7 @@
 			if (!$query) {
 				echo 'Não foi possível alterar o Tipo! Erro no banco: ' . mysqli_error($conexao);
 			} else {
-				echo '<p class="mensagem-cadastro"> Tipo alterado com sucesso! <img class="gif" src="imagens/sucesso.gif" alt="gif"> <br> Código '.$id.' <br> <a href="listar_tipos.php"><img class="button-fechar" src="imagens/fechar.png"></a></p>';
+				echo '<p class="mensagem-cadastro"> Tipo alterado com sucesso!  <br> Código '.$id.' <br> <a href="listar_tipos.php"><button class="btn-close">Voltar</button></a></p>';
 			}
 		?>
 	</body>

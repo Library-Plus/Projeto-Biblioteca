@@ -33,7 +33,7 @@
 			if (!$query) {
 				echo 'Não foi possível cadastrar o livro! Erro no banco: ' . mysqli_error($conexao);
 			} else {
-				echo '<p class="mensagem-cadastro"> Livro cadastrado com sucesso! <img class="gif" src="imagens/sucesso.gif" alt="gif"> <br> Código '.mysqli_insert_id($conexao).' <br> <a href="listar_livros.php"><img class="button-fechar" src="imagens/fechar.png"></a></p>';
+				echo '<p class="mensagem-cadastro"> Livro cadastrado com sucesso!  <br> Código '.mysqli_insert_id($conexao).' <br> <a href="listar_livros.php"><button class="btn-close">Voltar</button></a></p>';
 			}
 		?>
 	</body>

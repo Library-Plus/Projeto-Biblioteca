@@ -17,8 +17,8 @@
 			<input type="hidden" name="id" value="<?php echo $id; ?>">
 			Deseja excluir o Tipo (<?php echo $id; ?>) <?php echo $item['genero']; ?>?<br><br>
 						
-			<button type="submit">Excluir</button> 
-			<a href="listar_tipos.php">Cancelar</a>
+			<button class="btn-actions" type="submit">Excluir</button> 
+			<a href="listar_tipos.php"><button class="btn-actions">Cancelar</button></a>
 		</form>
 	</body>
 </html>

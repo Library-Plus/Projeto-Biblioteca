@@ -36,7 +36,7 @@
 				}
 
 				if($sucesso) {
-					echo '<p class="mensagem-cadastro"> Aluguel cadastrado com sucesso! <img class="gif" src="imagens/sucesso.gif" alt="gif"> <br> Código '.$id_venda.' <br> <a href="listar_aluguel.php"><img class="button-fechar" src="imagens/fechar.png"></a></p>';
+					echo '<p class="mensagem-cadastro"> Aluguel cadastrado com sucesso!  <br> Código '.$id_venda.' <br> <a href="listar_aluguel.php"><button class="btn-close">Voltar</button></a></p>';
 				}
 			}
 		?>

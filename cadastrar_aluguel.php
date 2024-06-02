@@ -13,7 +13,7 @@
 
 
 		<form class="cadastro" action="cadastrar_aluguel_db.php" method="post">
-			<label for="id_cliente">Cliente:</label><br>
+			<label for="id_cliente">Cliente</label><br>
 			<select name="id_cliente" id="id_cliente">
 				<?php
 					$sql = 'SELECT id, nome FROM cliente';
@@ -27,7 +27,7 @@
 			</select><br><br>
 
 			<form action="cadastrar_aluguel_db.php" method="post">
-			<label for="id_vendedor">Vendedor:</label><br>
+			<label for="id_vendedor">Vendedor</label><br>
 			<select name="id_vendedor" id="id_vendedor">
 				<?php
 					$sql = 'SELECT id, nome FROM vendedor';
@@ -40,7 +40,7 @@
 				?>
 			</select><br><br>
 		
-			<label for="data_venda">Data do Aluguel:</label><br>
+			<label for="data_venda">Data do Aluguel</label><br>
 			<input type="date" name="data_venda" id="data_venda"><input type="time" name="data_venda_hora" id="data_venda_hora"><br><br>
 			
 			<table>

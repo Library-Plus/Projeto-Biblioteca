@@ -14,11 +14,11 @@
 	<body>
 		<?php include('menu.php'); ?>
 		<form class="cadastro" action="alterar_livros_db.php" method="post">
-			<label>Código:</label><br>
+			<label>Código</label><br>
 			<input type="hidden" name="id" value="<?php echo $id; ?>">
 			<?php echo $id; ?><br><br>
 			
-			<label for="id_tipo">Tipo:</label><br>
+			<label for="id_tipo">Tipo</label><br>
 			<select name="id_tipo" id="id_tipo">
 				<?php
 					$sql = 'SELECT id, genero FROM tipo';
@@ -31,13 +31,13 @@
 				?>
 			</select><br><br>
 		
-			<label for="titulo">Título:</label><br>
+			<label for="titulo">Título</label><br>
 			<input type="text" name="titulo" id="titulo" maxlength="100" value="<?php echo $item['titulo']; ?>"><br><br>
 			
-			<label for="sinopse">Sinopse:</label><br>
+			<label for="sinopse">Sinopse</label><br>
 			<textarea name="sinopse" id="sinopse"><?php echo $item['sinopse']; ?></textarea><br><br>
 			
-			<label for="status">Status:</label><br>
+			<label for="status">Status</label><br>
 			<select name="status" id="status">
 				<option value="A"<?php if ($item['status'] == 'A') { ?> selected="selected"<?php } ?>>Ativo</option>
 				<option value="I"<?php if ($item['status'] == 'I') { ?> selected="selected"<?php } ?>>Inativo</option>

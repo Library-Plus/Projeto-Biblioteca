@@ -10,10 +10,10 @@
 	<body>
 		<?php include('menu.php'); ?>
 		<form class="cadastro" action="cadastrar_livros_db.php" method="post" enctype="multipart/form-data">
-			<label for="titulo">Titulo:</label><br>
+			<label for="titulo">Titulo</label><br>
 			<input type="text" name="titulo" id="titulo" maxlength="150"><br><br>
 			
-			<label for="id_tipo">Tipo:</label><br>
+			<label for="id_tipo">Tipo</label><br>
 			<select name="id_tipo" id="id_tipo">
 				<?php
 					$sql = 'SELECT id, genero FROM tipo';
@@ -26,13 +26,13 @@
 				?>
 			</select><br><br>
 
-			<label for="capa">Capa:</label><br>
+			<label for="capa">Capa</label><br>
 			<input type="file" name="capa" id="capa"><br><br>
 
-			<label for="sinopse">Sinopse:</label><br>
+			<label for="sinopse">Sinopse</label><br>
 			<textarea name="sinopse" id="sinopse"></textarea><br><br>
 			
-			<label for="status">Status:</label><br>
+			<label for="status">Status</label><br>
 			<select name="status" id="status">
 				<option value="A">Ativo</option>
 				<option value="I">Inativo</option>

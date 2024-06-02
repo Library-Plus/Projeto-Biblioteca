@@ -9,9 +9,9 @@
 	</head>
 	<body>
 		<?php include('menu.php'); ?>
-		<a href="cadastrar_clientes.php">Cadastrar</a>
-		<a href="json_listar_clientes.php">Exportar</a>
-		<a href="json_importar_clientes.php">Importar</a><br><br>
+		<a href="cadastrar_clientes.php"><button class="btn-actions">Cadastrar</button></a>
+		<a href="json_listar_clientes.php"><button class="btn-actions">Exportar</button></a>
+		<a href="json_importar_clientes.php"><button class="btn-actions">Importar</button></a><br><br>
 		<?php
 			$erro = @$_GET['erro'];
 			$msg = @$_GET['msg'];
@@ -35,11 +35,11 @@
 			<span class="ok">
 				<?php
 					if ($ok == 1) {
-						echo '<p class="mensagem-cadastro"> Cliente cadastrado com sucesso! <img class="gif" src="imagens/sucesso.gif" alt="gif"> <br> Código '.$msg.' <br> <a href="listar_clientes.php"><img class="button-fechar" src="imagens/fechar.png"></a></p>';
+						echo '<p class="mensagem-cadastro"> Cliente cadastrado com sucesso!  <br> Código '.$msg.' <br> <a href="listar_clientes.php"><button class="btn-close">Voltar</button></a></p>';
 					} else if($ok == 2) {
-						echo '<p class="mensagem-cadastro"> Cliente alterado com sucesso! <img class="gif" src="imagens/sucesso.gif" alt="gif"> <br> Código '.$msg.' <br> <a href="listar_clientes.php"><img class="button-fechar" src="imagens/fechar.png"></a></p>';
+						echo '<p class="mensagem-cadastro"> Cliente alterado com sucesso!  <br> Código '.$msg.' <br> <a href="listar_clientes.php"><button class="btn-close">Voltar</button></a></p>';
 					} else if($ok == 3) {
-						echo '<p class="mensagem-cadastro"> Cliente excluído com sucesso! <img class="gif" src="imagens/sucesso.gif" alt="gif"> <br> Código '.$msg.' <br> <a href="listar_clientes.php"><img class="button-fechar" src="imagens/fechar.png"></a></p>';
+						echo '<p class="mensagem-cadastro"> Cliente excluído com sucesso!  <br> Código '.$msg.' <br> <a href="listar_clientes.php"><button class="btn-close">Voltar</button></a></p>';
 					}
 				?>
 			</span><br><br>

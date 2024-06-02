@@ -17,8 +17,8 @@
 			<input type="hidden" name="id" value="<?php echo $id; ?>">
 			Excluir cliente? (<?php echo $id; ?>) <?php echo $item['nome']; ?>?<br><br>
 						
-			<button type="submit">Excluir</button> 
-			<a href="listar_clientes.php">Cancelar</a>
+			<button class="btn-actions" type="submit">Excluir</button> 
+			<a href="listar_clientes.php"><button class="btn-actions">Cancelar</button></a>
 		</form>
 	</body>
 </html>

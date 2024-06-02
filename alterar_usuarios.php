@@ -15,20 +15,20 @@
 	<body>
 		<?php include('menu.php'); ?>
 		<form class="cadastro" action="alterar_usuarios_db.php" method="post">
-			<label>Código:</label><br>
+			<label>Código</label><br>
 			<input type="hidden" name="id" value="<?php echo $id; ?>">
 			<?php echo $id; ?><br><br>
 			
-			<label for="nome">Nome:</label><br>
+			<label for="nome">Nome</label><br>
 			<input type="text" name="nome" id="nome" maxlength="150" value="<?php echo $item['nome']; ?>"><br><br>
 			
-			<label for="usuario">Login:</label><br>
+			<label for="usuario">Login</label><br>
 			<input type="text" name="usuario" id="usuario" maxlength="50" value="<?php echo $item['usuario']; ?>"><br><br>
 			
-			<label for="senha">Senha:</label><br>
+			<label for="senha">Senha</label><br>
 			<input type="password" name="senha" id="senha" maxlength="20"><br><br>
 
-			<label for="tipo">Tipo de Usuário:</label><br>
+			<label for="tipo">Tipo de Usuário</label><br>
 			<select name="tipo" id="tipo">
 				<option value="Administrador">Administrador</option>
 				<option value="Usuário Comum">Usuário Comum</option>

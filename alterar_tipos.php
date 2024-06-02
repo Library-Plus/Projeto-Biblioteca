@@ -14,11 +14,11 @@
 	<body>
 		<?php include('menu.php'); ?>
 		<form class="cadastro" action="alterar_tipos_db.php" method="post">
-			<label>Código:</label><br>
+			<label>Código</label><br>
 			<input type="hidden" name="id" value="<?php echo $id; ?>">
 			<?php echo $id; ?><br><br>
 			
-			<label for="genero">Gênero:</label><br>
+			<label for="genero">Gênero</label><br>
 			<input type="text" name="genero" id="genero" maxlength="50" value="<?php echo $item['genero']; ?>"><br><br>
 			
 			<button type="submit">Alterar</button>

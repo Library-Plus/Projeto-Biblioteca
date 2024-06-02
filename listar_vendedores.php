@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<?php include('menu.php'); ?>
-		<a href="cadastrar_vendedores.php">Cadastrar</a>
+		<a href="cadastrar_vendedores.php"><button class="btn-actions">Cadastrar</button></a>
 		<table class="tabela">
 			<thead>
 				<tr>

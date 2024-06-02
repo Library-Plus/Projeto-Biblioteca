@@ -18,8 +18,8 @@
 			<input type="hidden" name="id" value="<?php echo $id; ?>">
 			Deseja excluir o Usuário (<?php echo $id; ?>) <?php echo $item['nome']; ?>?<br><br>
 						
-			<button type="submit">Excluir</button> 
-			<a href="listar_usuarios.php">Cancelar</a>
+			<button class="btn-actions" type="submit">Excluir</button> 
+			<a href="listar_usuarios.php"><button class="btn-actions">Cancelar</button></a>
 		</form>
 	</body>
 </html>

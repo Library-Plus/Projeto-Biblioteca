@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html lang="pt=br">
 	<head>
-		<title>Lib+ Soluções</title>
+		<title>Lib+</title>
 	</head>
 	<body>
 		<?php include('menu.php'); ?>
@@ -34,18 +34,18 @@
 			<span class="ok">
 				<?php
 					if ($ok == 1) {
-						echo '<p class="mensagem-cadastro"> Usuário cadastrado com sucesso! <img class="gif" src="imagens/sucesso.gif" alt="gif"> <br> Código '.$msg.' <br> <a href="listar_usuarios.php"><img class="button-fechar" src="imagens/fechar.png"></a></p>';
+						echo '<p class="mensagem-cadastro"> Usuário cadastrado com sucesso!  <br> Código '.$msg.' <br> <a href="listar_usuarios.php"><button class="btn-close">Voltar</button></a></p>';
 					} else if($ok == 2) {
-						echo '<p class="mensagem-cadastro"> Usuário alterado com sucesso! <img class="gif" src="imagens/sucesso.gif" alt="gif"> <br> Código '.$msg.' <br> <a href="listar_usuarios.php"><img class="button-fechar" src="imagens/fechar.png"></a></p>';
+						echo '<p class="mensagem-cadastro"> Usuário alterado com sucesso!  <br> Código '.$msg.' <br> <a href="listar_usuarios.php"><button class="btn-close">Voltar</button></a></p>';
 					} else if($ok == 3) {
-						echo '<p class="mensagem-cadastro"> Usuário excluído com sucesso! <img class="gif" src="imagens/sucesso.gif" alt="gif"> <br> Código '.$msg.' <br> <a href="listar_usuarios.php"><img class="button-fechar" src="imagens/fechar.png"></a></p>';
+						echo '<p class="mensagem-cadastro"> Usuário excluído com sucesso!  <br> Código '.$msg.' <br> <a href="listar_usuarios.php"><button class="btn-close">Voltar</button></a></p>';
 					}
 				?>
 			</span><br><br>
 		<?php  } ?>
 		
 
-		<a class="button_cadastrar" href="cadastrar_usuarios.php">Cadastrar</a>
+		<a class="button_cadastrar" href="cadastrar_usuarios.php"><button class="btn-actions">Cadastrar</button></a>
 		<table class="tabela">
 			<thead class="thead_tabela">
 				<tr class="tr_tabela">
