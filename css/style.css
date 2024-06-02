@@ -12,8 +12,7 @@ body{
   margin: 15px;
 }
 .form-login{
-  border: 1px solid white;
-  background-color: #8400b8;
+  background-image: linear-gradient(to right, #f301ea, #960091, #8400b8, #5f0084);
   border-radius: 30px;
   width: 25%;
   margin-left:auto;
@@ -22,14 +21,9 @@ body{
 }
 .form-login.has-error{
   border: 1px solid red;
-  border-radius: 30px;
-  width: 20%;
-  margin-left: 38%;
-  margin-top: 9.05%;
 }
 .bem-vindo {
-  border: 1px solid white;
-  background-color: #8400b8;
+  background-image: linear-gradient(to right, #f301ea, #960091, #8400b8, #5f0084);
   border-radius: 30px;
   width: 20%;
   padding: 20px;
@@ -47,7 +41,7 @@ body{
   text-align: center;
 }
 .user-box {
-  background-color: #8400b8;
+  background-image: linear-gradient(to right, #f301ea, #960091, #8400b8, #5f0084);
   width: 8%;
   display: flex;
   align-items: center;
@@ -56,8 +50,7 @@ body{
   padding: 10px;
 }
 .user-box:hover{
-  transition: 500ms;
-  background-color: #13081a;
+  background-image: linear-gradient(to right, white, #8400b8);
 }
 .img-box {
   width: 30px;
@@ -80,14 +73,14 @@ button {
   width: 50%;
 }
 button:hover {
-  transition: 500ms;
-  background-color: white;
+  transition: 2000ms;
+  background-image: linear-gradient(to right, white, white);
   color: #8400b8;
 }
 .btn-actions {
   margin-bottom: 10px;
   font-weight: bold;
-  background-color: #8400b8;
+  background-image: linear-gradient(to right, #f301ea, #960091, #8400b8, #5f0084);
   color: white;
   border: 0px;
   border-radius: 24px;
@@ -127,6 +120,9 @@ button:hover {
   height: 50px;
 }
 .user{
+  background-color: white;
+  border-radius: 15px;
+  padding: 5px;
   width: 30%;
   height: 30%;
   margin: 8% 0% 6% 34%;
@@ -171,6 +167,9 @@ th {
   font-size: 15px;
   padding: 15px;
 }
+td {
+  text-align: center;
+}
 th:first-child{
   border-top-left-radius: 15px;
 }
@@ -178,10 +177,11 @@ th:last-child {
   border-top-right-radius: 15px;
 }
 .tabela thead{
-  background-color: #8400b8;
+  background-image: linear-gradient(to right, #f301ea, #960091, #8400b8, #5f0084);
   color: white;
 }
 .tabela tbody, tr {
+  font-size: 15px;
   border-bottom: 1px solid #dddddd;
 }
 p {
@@ -203,7 +203,7 @@ a:hover{
   border-radius: 3px;
 }
 .cadastro {
-  background-color: #8400b8;
+  background-image: linear-gradient(to right, #f301ea, #960091, #8400b8, #5f0084);
   width: 610px;
   height: 100%;
   margin: 0 auto;
@@ -287,5 +287,8 @@ select{
   float: left;
 }
 .btn-close {
-  background-color: #8400b8;
+  background-image: linear-gradient(to right, #f301ea, #960091, #8400b8, #5f0084);
+}
+.btn-submit {
+  margin-left: 13%;
 }
