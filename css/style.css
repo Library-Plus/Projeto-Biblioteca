@@ -22,6 +22,7 @@ body{
   border-radius: 15px;
   background-image: linear-gradient(to right, #f301ea, #960091, #8400b8, #5f0084);
   text-align: center;
+  border: 3px solid white;
 }
 .github-container-painel {
   position: fixed;
@@ -54,6 +55,7 @@ body{
 }
 .form-login{
   background-image: linear-gradient(to right, #f301ea, #960091, #8400b8, #5f0084);
+  border: 3px solid white;
   border-radius: 30px;
   width: 25%;
   margin-left:auto;
@@ -61,11 +63,12 @@ body{
   margin-top: 9.05%;
 }
 .form-login.has-error{
-  border: 1px solid red;
+  border: 3px solid red;
 }
 .bem-vindo {
   background-image: linear-gradient(to right, #f301ea, #960091, #8400b8, #5f0084);
   border-radius: 30px;
+  border: 3px solid white;
   width: 20%;
   padding: 20px;
   margin-left: 37%;
@@ -88,10 +91,11 @@ body{
   align-items: center;
   justify-content: space-between;
   border-radius: 15px;
+  border: 3px solid white;
   padding: 10px;
 }
 .user-box:hover{
-  background-image: linear-gradient(to right, white, #8400b8);
+  background-image: linear-gradient(to right, #13081a, #8400b8);
 }
 .img-box {
   width: 30px;
@@ -252,7 +256,7 @@ a:hover{
   padding-top: 40px;
   padding-bottom: 40px;
   border-radius: 15px;
-  border: 1px solid black;
+  border: 3px solid white;
 }
 .capa {
   width: 70px;
