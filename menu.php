@@ -18,6 +18,7 @@
             <a href="listar_aluguel.php">Aluguel</a>
             <a href="listar_usuarios.php">Usuários</a>
             <a href="feedback.php">Seu retorno</a>
+            <a href="sobre.php">Sobre</a>
         </div>
         <div class="user-box">
 			<img class="img-box" src="imagens/user.png" alt="user" > <br>

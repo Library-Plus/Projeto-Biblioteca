@@ -4,7 +4,7 @@
 	$livro = @$_POST['livro'] ? $_POST['livro'] : 1;
 ?>
 <!DOCTYPE html>
-<html lang="pt=br">
+<html lang="pt-br">
 	<head>
 		<title></title>
 	</head>

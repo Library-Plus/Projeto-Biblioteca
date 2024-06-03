@@ -7,7 +7,7 @@
 	$item = mysqli_fetch_array($query, MYSQLI_ASSOC);
 ?>
 <!DOCTYPE html>
-<html lang="pt=br">
+<html lang="pt-br">
 	<head>
 		<title></title>
 	</head>
