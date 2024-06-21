@@ -1,6 +1,7 @@
 <?php
 	include('conexao.php');
 	include('validar.php');
+	include('restrito.php');
 	$livro = @$_POST['livro'] ? $_POST['livro'] : 1;
 ?>
 <!DOCTYPE html>

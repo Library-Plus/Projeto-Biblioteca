@@ -1,6 +1,7 @@
 <?php
 	include('conexao.php');
 	include('validar.php');
+	include('restrito.php');
 	$id = $_GET['id'];
 	$sql = "SELECT * FROM cliente WHERE id = {$id}";
 	$query = mysqli_query($conexao, $sql);

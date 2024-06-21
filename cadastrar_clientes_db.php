@@ -1,6 +1,7 @@
 <?php
 	include('conexao.php');
 	include('validar.php');
+	include('restrito.php');
 
 	$nome = $_POST['nome'];
 	$email = $_POST['email'];

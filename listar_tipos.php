@@ -1,7 +1,6 @@
 <?php
 	include('conexao.php');
 	include('validar.php');
-	include('restrito.php');
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
