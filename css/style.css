@@ -20,7 +20,7 @@ body{
   padding: 10px;
   width: 30%;
   border-radius: 15px;
-  background-image: linear-gradient(to right, #f301ea, #960091, #8400b8, #5f0084);
+  background-color: #8e01f3;
   text-align: center;
   border: 3px solid white;
 }
@@ -51,10 +51,16 @@ body{
   color: white;
 }
 .github-link-painel:hover{
-  color: #8400b8;
+  color: #8e01f3;
 }
 .form-login{
-  background-image: linear-gradient(to right, #f301ea, #960091, #8400b8, #5f0084);
+  padding: 10px;
+  background-color: #8e01f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   border-radius: 30px;
   width: 25%;
   border: 2px solid #13081a;
@@ -66,15 +72,21 @@ body{
   border: 2px solid brown;
 }
 .bem-vindo {
-  background-image: linear-gradient(to right, #f301ea, #960091, #8400b8, #5f0084);
+  padding: 40px 10px;
+  background-color: #8e01f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   border-radius: 30px;
-  width: 20%;
-  padding: 20px;
-  margin-left: 37%;
+  width: 25%;
+  border: 2px solid #13081a;
+  margin-left:auto;
+  margin-right:auto;
   margin-top: 6.55%;
 }
 .user-painel{
-  margin: 8% 0% 0% 34%;
   width: 30%;
   height: 30%;
 }
@@ -84,8 +96,8 @@ body{
   text-align: center;
 }
 .user-box {
-  background-image: linear-gradient(to right, #f301ea, #960091, #8400b8, #5f0084);
-  width: 8%;
+  background-color: #8e01f3;
+  width: 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -93,7 +105,7 @@ body{
   padding: 10px;
 }
 .img-box {
-  width: 30px;
+  width: 25px;
 }
 .nome-box {
   font-size: 14px;
@@ -113,14 +125,13 @@ button {
   width: 50%;
 }
 button:hover {
-  transition: 2000ms;
-  background-image: linear-gradient(to right, white, white);
-  color: #8400b8;
+  background-color: white;
+  color: #8e01f3;
 }
 .btn-actions {
   margin-bottom: 10px;
   font-weight: bold;
-  background-image: linear-gradient(to right, #f301ea, #960091, #8400b8, #5f0084);
+  background-color: #8e01f3;
   color: white;
   border: 0px;
   border-radius: 24px;
@@ -165,7 +176,7 @@ button:hover {
   padding: 5px;
   width: 30%;
   height: 30%;
-  margin: 8% 0% 6% 34%;
+  margin: 10px;
 }
 .header-container{
   display: flex;
@@ -186,13 +197,6 @@ button:hover {
 .menu {
   margin-top: 25px;
   gap: 12px;
-}
-.formulario{
-  padding: 0px 0px 0px 0px;
-  margin-bottom: 30px;
-  margin-left: 20%;
-  border-radius: 0px;
-  border: 0px solid #2ba5f7;
 }
 h1{
   font-size: 22px;
@@ -217,7 +221,7 @@ th:last-child {
   border-top-right-radius: 15px;
 }
 .tabela thead{
-  background-image: linear-gradient(to right, #f301ea, #960091, #8400b8, #5f0084);
+  background-color: #8e01f3;
   color: white;
 }
 .tabela tbody, tr {
@@ -238,12 +242,11 @@ a{
   font-size: 16px;
 }
 a:hover{
-  transition: 500ms;
-  color: #8400b8;
+  color: #8e01f3;
   border-radius: 3px;
 }
 .cadastro {
-  background-image: linear-gradient(to right, #f301ea, #960091, #8400b8, #5f0084);
+  background-color: #8e01f3;
   width: 610px;
   height: 100%;
   margin: 0 auto;
@@ -284,7 +287,7 @@ input.id {
   border: 0px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
-  width: 200px;
+  width: 150px;
   height: 27px;
 }
 input.senha {
@@ -292,7 +295,7 @@ input.senha {
   border: 0px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
-  width: 200px;
+  width: 150px;
   height: 27px;
 }
 .data {
@@ -327,8 +330,5 @@ select{
   float: left;
 }
 .btn-close {
-  background-image: linear-gradient(to right, #f301ea, #960091, #8400b8, #5f0084);
-}
-.btn-submit {
-  margin-left: 13%;
+  background-color: #8e01f3;
 }

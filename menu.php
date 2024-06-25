@@ -41,4 +41,5 @@
 			<a href="sair.php"><img class="button-box" src="imagens/sair.svg"></a>
 		</div>
     </header>
+    <br>
 </body>
