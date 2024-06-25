@@ -19,8 +19,8 @@
 			Excluir cliente? (<?php echo $id; ?>) <?php echo $item['nome']; ?>?<br><br>
 						
 			<button class="btn-actions" type="submit">Excluir</button> 
-			<a href="listar_clientes.php"><button class="btn-actions">Cancelar</button></a>
 		</form>
+		<a href="listar_clientes.php"><button class="btn-actions">Cancelar</button></a>
 	</body>
 </html>
 <?php

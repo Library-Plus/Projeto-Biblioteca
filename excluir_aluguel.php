@@ -19,8 +19,8 @@
 			Deseja excluir o aluguel?<br><br>
 						
 			<button class="btn-actions" type="submit">Excluir</button> 
-			<a href="listar_aluguel.php"><button class="btn-actions">Cancelar</button></a>
 		</form>
+		<a href="listar_aluguel.php"><button class="btn-actions">Cancelar</button></a>
 	</body>
 </html>
 <?php

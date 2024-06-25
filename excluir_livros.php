@@ -19,8 +19,8 @@
 			Deseja excluir o livro (<?php echo $id; ?>) <?php echo $item['titulo']; ?>?<br><br>
 						
 			<button class="btn-actions" type="submit">Excluir</button> 
-			<a href="listar_livros.php"><button class="btn-actions">Cancelar</button></a>
 		</form>
+		<a href="listar_livros.php"><button class="btn-actions">Cancelar</button></a>
 	</body>
 </html>
 <?php
