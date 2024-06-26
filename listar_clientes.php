@@ -52,7 +52,7 @@
 		<form>
     		<label>Buscar nome do Cliente</label><br>
     		<input type="text" name="txtBuscar" id="txtBuscar">
-    		<button type="button" class="btn-submit" id="buscar">Buscar</button>
+    		<button type="button" class="btn-actions" id="buscar">Buscar</button>
 		</form>
 		<a href="cadastrar_clientes.php"><button class="btn-actions">Cadastrar</button></a>
 		<a href="json_listar_clientes.php"><button class="btn-actions">Exportar</button></a>

@@ -51,7 +51,7 @@
 		<form>
     		<label>Buscar nome do Livro</label><br>
     		<input type="text" name="txtBuscar" id="txtBuscar">
-    		<button type="button" class="btn-submit" id="buscar">Buscar</button>
+    		<button type="button" class="btn-actions" id="buscar">Buscar</button>
 		</form>
 		<a href="cadastrar_livros.php"><button class="btn-actions">Cadastrar</button></a>
 		<table class="tabela" id="tabela_livros">

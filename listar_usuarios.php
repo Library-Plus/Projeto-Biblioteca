@@ -86,7 +86,7 @@
 		<form>
     		<label>Buscar nome do Usuário</label><br>
     		<input type="text" name="txtBuscar" id="txtBuscar">
-    		<button type="button" class="btn-submit" id="buscar">Buscar</button>
+    		<button type="button" class="btn-actions" id="buscar">Buscar</button>
 		</form>
 
 		<a class="button_cadastrar" href="cadastrar_usuarios.php"><button class="btn-actions">Cadastrar</button></a>

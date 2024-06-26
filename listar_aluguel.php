@@ -53,7 +53,7 @@
 		<form>
     		<label>Buscar nome do Cliente</label><br>
     		<input type="text" name="txtBuscar" id="txtBuscar">
-    		<button type="button" id="buscar">Buscar</button>
+    		<button type="button" class="btn-actions" id="buscar">Buscar</button>
 		</form>
 		
 		<a href="cadastrar_aluguel.php"><button class="btn-actions">Cadastrar</button></a>
