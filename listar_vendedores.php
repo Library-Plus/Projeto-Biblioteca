@@ -7,11 +7,55 @@
 <html lang="pt-br">
 	<head>
 		<title>Lib+</title>
+		<script src="jquery/jquery-3.7.0.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('.excluir').on('click', function () {
+					var retorno = confirm('Deseja excluir este item?');
+					if(retorno) {
+						var obj = $(this);
+						var ID = obj.closest('tr').find('td').html();
+
+						$.ajax({
+							url: 'excluir_vendedores_db.php',
+							method: 'GET',
+							data: {
+								id: ID,
+							}
+						}) 
+						.done(function (dados) {
+							var item = JSON.parse(dados);
+							alert(item.msg);
+							if (item.tipo == 'ok') {
+								obj.closest('tr').remove();
+							}
+						});
+					}
+				});
+				$('#buscar').on('click', function () {
+            		var txtBuscar = $('#txtBuscar').val();
+            		$.ajax({
+                		url: 'listar_vendedores_db.php',
+                		method: 'GET',
+                		data: {
+                    	txtBuscar: txtBuscar,
+                	}
+            		}).done(function (dados) {
+                		$('#tabela_vendedores tbody').html(dados);
+            		});
+        		});
+			});
+		</script>
 	</head>
 	<body>
 		<?php include('menu.php'); ?>
 		<a href="cadastrar_vendedores.php"><button class="btn-actions">Cadastrar</button></a>
-		<table class="tabela">
+		<form>
+    		<label>Buscar nome do Vendedores</label><br>
+    		<input type="text" name="txtBuscar" id="txtBuscar">
+    		<button type="button" class="btn-submit" id="buscar">Buscar</button>
+		</form>
+		<table class="tabela" id="tabela_vendedores">
 			<thead>
 				<tr>
 					<th>Código</th>
@@ -41,7 +85,7 @@
 					<td><?php echo $item['status'] == 'A' ? 'Ativo' : 'Inativo'; ?></td>
 					<td>
 						<a href="alterar_vendedores.php?id=<?php echo $item['id']; ?>">Alterar</a><br>
-						<a href="excluir_vendedores.php?id=<?php echo $item['id']; ?>">Excluir</a>
+						<a class="excluir">Excluir</a>
 					</td>
 				</tr>
 			<?php

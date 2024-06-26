@@ -7,6 +7,45 @@
 <html lang="pt-br">
 	<head>
 		<title>Lib+</title>
+		<script src="jquery/jquery-3.7.0.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('.excluir').on('click', function () {
+					var retorno = confirm('Deseja excluir este item?');
+					if(retorno) {
+						var obj = $(this);
+						var ID = obj.closest('tr').find('td').html();
+
+						$.ajax({
+							url: 'excluir_usuarios_db.php',
+							method: 'GET',
+							data: {
+								id: ID,
+							}
+						}) 
+						.done(function (dados) {
+							var item = JSON.parse(dados);
+							alert(item.msg);
+							if (item.tipo == 'ok') {
+								obj.closest('tr').remove();
+							}
+						});
+					}
+				});
+				$('#buscar').on('click', function () {
+            		var txtBuscar = $('#txtBuscar').val();
+            		$.ajax({
+                		url: 'listar_usuarios_db.php',
+                		method: 'GET',
+                		data: {
+                    	txtBuscar: txtBuscar,
+                	}
+            		}).done(function (dados) {
+                		$('#tabela_usuarios tbody').html(dados);
+            		});
+        		});
+			});
+		</script>
 	</head>
 	<body>
 		<?php include('menu.php'); ?>
@@ -44,9 +83,14 @@
 			</span><br><br>
 		<?php  } ?>
 		
+		<form>
+    		<label>Buscar nome do Usuário</label><br>
+    		<input type="text" name="txtBuscar" id="txtBuscar">
+    		<button type="button" class="btn-submit" id="buscar">Buscar</button>
+		</form>
 
 		<a class="button_cadastrar" href="cadastrar_usuarios.php"><button class="btn-actions">Cadastrar</button></a>
-		<table class="tabela">
+		<table class="tabela" id="tabela_usuarios">
 			<thead class="thead_tabela">
 				<tr class="tr_tabela">
 					<th>Código</th>
@@ -72,7 +116,7 @@
 					<td><?php echo $item['tipo']; ?></td>
 					<td>
 						<a href="alterar_usuarios.php?id=<?php echo $item['id']; ?>">Alterar</a><br>
-						<a href="excluir_usuarios.php?id=<?php echo $item['id']; ?>">Excluir</a>
+						<a class="excluir">Excluir</a>
 					</td>
 				</tr>
 			<?php
@@ -86,5 +130,3 @@
 <?php
 	mysqli_close($conexao);
 ?>
-
-

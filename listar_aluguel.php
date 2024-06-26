@@ -7,11 +7,57 @@
 <html lang="pt-br">
 	<head>
 		<title>Lib+</title>
+		<script src="jquery/jquery-3.7.0.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('.excluir').on('click', function () {
+					var retorno = confirm('Deseja excluir este item?');
+					if(retorno) {
+						var obj = $(this);
+						var ID = obj.closest('tr').find('td').html();
+
+						$.ajax({
+							url: 'excluir_aluguel_db.php',
+							method: 'GET',
+							data: {
+								id: ID,
+							}
+						}) 
+						.done(function (dados) {
+							var item = JSON.parse(dados);
+							alert(item.msg);
+							if (item.tipo == 'ok') {
+								obj.closest('tr').remove();
+							}
+						});
+					}
+				});
+					$('#buscar').on('click', function () {
+        		    	var txtBuscar = $('#txtBuscar').val();
+        		    	$.ajax({
+        		        url: 'listar_aluguel_db.php',
+        		        method: 'GET',
+        		        data: {
+        		            txtBuscar: txtBuscar,
+        		        }
+        		    }).done(function (dados) {
+                		$('#tabela_aluguel tbody').html(dados);
+        		    });
+        		});
+			});
+		</script>
 	</head>
 	<body>
 		<?php include('menu.php'); ?>
+
+		<form>
+    		<label>Buscar nome do Cliente</label><br>
+    		<input type="text" name="txtBuscar" id="txtBuscar">
+    		<button type="button" id="buscar">Buscar</button>
+		</form>
+		
 		<a href="cadastrar_aluguel.php"><button class="btn-actions">Cadastrar</button></a>
-		<table class="tabela">
+		<table class="tabela" id="tabela_aluguel">
 			<thead>
 				<tr>
 					<th>Código</th>
@@ -48,7 +94,7 @@
 					<td><?php echo $item['nome_vendedor']; ?></td>
 					<td>
 						<a href="alterar_aluguel.php?id=<?php echo $item['id']; ?>">Alterar</a><br>
-						<a href="excluir_aluguel.php?id=<?php echo $item['id']; ?>">Excluir</a>
+						<a class="excluir">Excluir</a>
 					</td>
 				</tr>
 			<?php

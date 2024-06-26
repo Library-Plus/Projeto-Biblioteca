@@ -7,9 +7,53 @@
 <html lang="pt-br">
 	<head>
 		<title>Lib+</title>
+		<script src="jquery/jquery-3.7.0.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('.excluir').on('click', function () {
+					var retorno = confirm('Deseja excluir este item?');
+					if(retorno) {
+						var obj = $(this);
+						var ID = obj.closest('tr').find('td').html();
+
+						$.ajax({
+							url: 'excluir_clientes_db.php',
+							method: 'GET',
+							data: {
+								id: ID,
+							}
+						}) 
+						.done(function (dados) {
+							var item = JSON.parse(dados);
+							alert(item.msg);
+							if (item.tipo == 'ok') {
+								obj.closest('tr').remove();
+							}
+						});
+					}
+				});
+				$('#buscar').on('click', function () {
+            		var txtBuscar = $('#txtBuscar').val();
+            		$.ajax({
+                		url: 'listar_clientes_db.php',
+                		method: 'GET',
+                		data: {
+                    	txtBuscar: txtBuscar,
+                	}
+            		}).done(function (dados) {
+                		$('#tabela_clientes tbody').html(dados);
+            		});
+        		});
+			});
+		</script>
 	</head>
 	<body>
 		<?php include('menu.php'); ?>
+		<form>
+    		<label>Buscar nome do Cliente</label><br>
+    		<input type="text" name="txtBuscar" id="txtBuscar">
+    		<button type="button" class="btn-submit" id="buscar">Buscar</button>
+		</form>
 		<a href="cadastrar_clientes.php"><button class="btn-actions">Cadastrar</button></a>
 		<a href="json_listar_clientes.php"><button class="btn-actions">Exportar</button></a>
 		<a href="json_importar_clientes.php"><button class="btn-actions">Importar</button></a>
@@ -47,7 +91,7 @@
 		<?php  } ?>
 		
 
-		<table class="tabela">
+		<table class="tabela" id="tabela_clientes">
 			<thead>
 				<tr>
 					<th>Código</th>
@@ -73,7 +117,7 @@
 					<td><?php echo $item['status'] == 'A' ? 'Ativo' : 'Inativo'; ?></td>
 					<td>
 						<a href="alterar_clientes.php?id=<?php echo $item['id']; ?>">Alterar</a><br>
-						<a href="excluir_clientes.php?id=<?php echo $item['id']; ?>">Excluir</a>
+						<a class="excluir">Excluir</a>
 					</td>
 				</tr>
 			<?php
