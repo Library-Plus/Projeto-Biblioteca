@@ -9,7 +9,7 @@
 		<title>Lib+</title>
 		<script src="jquery/jquery-3.7.0.js" type="text/javascript"></script>
 		<script type="text/javascript">
-			$(document).ready(function () {
+			$(document).on('click', '.excluir', function () {
 				$('.excluir').on('click', function () {
 					var retorno = confirm('Deseja excluir este item?');
 					if(retorno) {

@@ -9,7 +9,7 @@
 		<script src="jquery/jquery-3.7.0.js" type="text/javascript"></script>
 		<script type="text/javascript">
 			$(document).ready(function () {
-				$('.excluir').on('click', function () {
+				$(document).on('click', '.excluir', function () {
 					var retorno = confirm('Deseja excluir este item?');
 					if(retorno) {
 						var obj = $(this);
@@ -61,7 +61,11 @@
 				<tr>
 					<th>Código</th>
 					<th>Gênero</th>
-					<th>Ações</th>
+					<?php
+						if ($_SESSION['usuario']['tipo'] == 1){
+							echo '<th>Ações</th>';
+						}
+					?>
 				</tr>
 			</thead>
 			<tbody>
@@ -76,10 +80,14 @@
 				<tr>
 					<td><?php echo $item['id']; ?></td>
 					<td><?php echo $item['genero']; ?></td>
-					<td>
-						<a href="alterar_tipos.php?id=<?php echo $item['id']; ?>">Alterar</a><br>
-						<a class="excluir">Excluir</a>
-					</td>
+					<?php
+						if ($_SESSION['usuario']['tipo'] == 1){
+							echo '<td>
+								  	<a href="alterar_tipos.php?id=' . $item['id'] . '>Alterar</a><br>
+								  	<a class="excluir">Excluir</a>
+								  </td>';
+						}
+					?>
 				</tr>
 			<?php
 				}

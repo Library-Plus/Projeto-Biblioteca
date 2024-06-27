@@ -5,7 +5,7 @@
     $usuario = mysqli_real_escape_string($conexao, $_POST['usuario']);
     $senha = mysqli_real_escape_string($conexao, md5($_POST['senha']));
 
-    $sql = "SELECT id, nome, usuario FROM usuario WHERE usuario = '{$usuario}' AND senha = '{$senha}'";
+    $sql = "SELECT id, nome, usuario, tipo FROM usuario WHERE usuario = '{$usuario}' AND senha = '{$senha}'";
     $query = mysqli_query($conexao, $sql);
     if(!$query) {
         header('Location: index.php?erro=2&msg=' .  mysqli_error($conexao));

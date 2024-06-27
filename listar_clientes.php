@@ -10,7 +10,7 @@
 		<script src="jquery/jquery-3.7.0.js" type="text/javascript"></script>
 		<script type="text/javascript">
 			$(document).ready(function () {
-				$('.excluir').on('click', function () {
+				$(document).on('click', '.excluir', function () {
 					var retorno = confirm('Deseja excluir este item?');
 					if(retorno) {
 						var obj = $(this);
