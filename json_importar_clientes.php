@@ -12,7 +12,7 @@
 			<label for="json">JSON:</label><br>
 			<textarea name="json" id="json"></textarea><br><br>
 						
-			<button type="submit">Importar</button>
+			<button type="submit" class="btn-actions">Importar</button>
 		</form>
 	</body>
 </html>

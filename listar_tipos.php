@@ -48,11 +48,13 @@
 	</head>
 	<body>
 		<?php include('menu.php'); ?>
-		<form>
-    		<label>Buscar nome do Gênero</label><br>
+		
+		<label>Buscar Gênero</label><br>
+		<form class="buscar">
     		<input type="text" name="txtBuscar" id="txtBuscar">
     		<button type="button" class="btn-actions" id="buscar">Buscar</button>
 		</form>
+
 		<a href="cadastrar_tipos.php"><button class="btn-actions">Cadastrar</button></a>
 		<table class="tabela" id="tabela_tipos">
 			<thead>

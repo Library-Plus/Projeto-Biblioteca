@@ -38,8 +38,8 @@
                 		url: 'listar_clientes_db.php',
                 		method: 'GET',
                 		data: {
-                    	txtBuscar: txtBuscar,
-                	}
+                    		txtBuscar: txtBuscar,
+                		}
             		}).done(function (dados) {
                 		$('#tabela_clientes tbody').html(dados);
             		});
@@ -49,11 +49,13 @@
 	</head>
 	<body>
 		<?php include('menu.php'); ?>
-		<form>
-    		<label>Buscar nome do Cliente</label><br>
+
+		<label>Buscar Cliente por nome</label><br>
+		<form class="buscar">
     		<input type="text" name="txtBuscar" id="txtBuscar">
     		<button type="button" class="btn-actions" id="buscar">Buscar</button>
 		</form>
+
 		<a href="cadastrar_clientes.php"><button class="btn-actions">Cadastrar</button></a>
 		<a href="json_listar_clientes.php"><button class="btn-actions">Exportar</button></a>
 		<a href="json_importar_clientes.php"><button class="btn-actions">Importar</button></a>

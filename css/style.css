@@ -235,6 +235,10 @@ p {
 input.entrar {
   width: 38px;
 }
+input.capa, input.capa:hover {
+  width: 90%;
+  background-color: transparent;
+}
 a{
   color: white;
   text-decoration: none;
@@ -297,6 +301,15 @@ input.senha {
   border-bottom-left-radius: 0px;
   width: 150px;
   height: 27px;
+}
+#txtBuscar{
+  margin-right: 10px;
+  width: 90%;
+}
+.buscar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 .data {
   border-bottom-left-radius: 0px;

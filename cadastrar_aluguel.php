@@ -42,7 +42,7 @@
 			</select><br><br>
 		
 			<label for="data_venda">Data do Aluguel</label><br>
-			<input type="date" name="data_venda" id="data_venda"><input type="time" name="data_venda_hora" id="data_venda_hora"><br><br>
+			<input type="date" name="data_venda" id="data_venda" class="data"><input type="time" name="data_venda_hora" id="data_venda_hora" class="hora"><br><br>
 			
 			<table>
 				<thead>

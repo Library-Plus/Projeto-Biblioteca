@@ -50,8 +50,8 @@
 	<body>
 		<?php include('menu.php'); ?>
 
-		<form>
-    		<label>Buscar nome do Cliente</label><br>
+		<label>Buscar alguel por nome do Cliente</label><br>
+		<form class="buscar">
     		<input type="text" name="txtBuscar" id="txtBuscar">
     		<button type="button" class="btn-actions" id="buscar">Buscar</button>
 		</form>

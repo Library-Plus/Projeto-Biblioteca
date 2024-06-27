@@ -28,7 +28,7 @@
 			</select><br><br>
 
 			<label for="capa">Capa</label><br>
-			<input type="file" name="capa" id="capa"><br><br>
+			<input type="file" name="capa" id="capa" class="capa"><br><br>
 
 			<label for="sinopse">Sinopse</label><br>
 			<textarea name="sinopse" id="sinopse"></textarea><br><br>

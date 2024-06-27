@@ -83,8 +83,8 @@
 			</span><br><br>
 		<?php  } ?>
 		
-		<form>
-    		<label>Buscar nome do Usuário</label><br>
+		<label>Buscar Usuário</label><br>
+		<form class="buscar">
     		<input type="text" name="txtBuscar" id="txtBuscar">
     		<button type="button" class="btn-actions" id="buscar">Buscar</button>
 		</form>

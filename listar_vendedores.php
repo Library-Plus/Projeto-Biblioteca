@@ -49,11 +49,13 @@
 	</head>
 	<body>
 		<?php include('menu.php'); ?>
-		<form>
-    		<label>Buscar nome do Vendedor</label><br>
+
+		<label>Buscar Vendedor por nome</label><br>
+		<form class="buscar">
     		<input type="text" name="txtBuscar" id="txtBuscar">
     		<button type="button" class="btn-actions" id="buscar">Buscar</button>
 		</form>
+		
 		<a href="cadastrar_vendedores.php"><button class="btn-actions">Cadastrar</button></a>
 		<table class="tabela" id="tabela_vendedores">
 			<thead>
