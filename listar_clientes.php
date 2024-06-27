@@ -57,6 +57,7 @@
 		<a href="cadastrar_clientes.php"><button class="btn-actions">Cadastrar</button></a>
 		<a href="json_listar_clientes.php"><button class="btn-actions">Exportar</button></a>
 		<a href="json_importar_clientes.php"><button class="btn-actions">Importar</button></a>
+		<a href="json_importar_clientes_tabela.php"><button class="btn-actions">Tabela</button></a>
 		<?php
 			$erro = @$_GET['erro'];
 			$msg = @$_GET['msg'];
@@ -101,7 +102,7 @@
 					<th>Ações</th>
 				</tr>
 			</thead>
-			<tbody>
+			<tbody id="body_clientes">
 			<?php
 				$sql = 'SELECT id, nome, cpf, status FROM cliente';
 				$query = mysqli_query($conexao, $sql);

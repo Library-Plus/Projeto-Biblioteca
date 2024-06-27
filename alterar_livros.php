@@ -10,13 +10,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
-		<title></title>
+		<title>Alterar Livros</title>
+		<script>
+			$(document).ready(function() {
+			var statusFromPHP = "<?php echo $item['status']; ?>";
+			$("#status").val(statusFromPHP);
+			$("#id_tipo").val($('#id_tipo_select').val());
+		});
+		</script>
 	</head>
 	<body>
 		<?php include('menu.php'); ?>
 		<form class="cadastro" action="alterar_livros_db.php" method="post">
 			<label>Código</label><br>
 			<input type="hidden" name="id" value="<?php echo $id; ?>">
+			<input type="hidden" id="id_tipo_select" value="<?php echo $item['id_tipo']; ?>">
+			
 			<?php echo $id; ?><br><br>
 			
 			<label for="id_tipo">Tipo</label><br>
@@ -40,8 +49,8 @@
 			
 			<label for="status">Status</label><br>
 			<select name="status" id="status">
-				<option value="A"<?php if ($item['status'] == 'A') { ?> selected="selected"<?php } ?>>Ativo</option>
-				<option value="I"<?php if ($item['status'] == 'I') { ?> selected="selected"<?php } ?>>Inativo</option>
+				<option value="A">Ativo</option>
+				<option value="I">Inativo</option>
 			</select><br><br>
 			
 			<button type="submit">Alterar</button>

@@ -10,7 +10,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
-		<title></title>
+		<title>Alterar Cliente</title>
+		<script>
+			$(document).ready(function() {
+			var statusFromPHP = "<?php echo $item['status']; ?>";
+			$("#status").val(statusFromPHP);
+		});
+		</script>
 	</head>
 	<body>
 		<?php include('menu.php'); ?>
@@ -33,8 +39,8 @@
 			
 			<label for="status">Status</label><br>
 			<select name="status" id="status">
-				<option value="A"<?php if ($item['status'] == 'A') { ?> selected="selected"<?php } ?>>Ativo</option>
-				<option value="I"<?php if ($item['status'] == 'I') { ?> selected="selected"<?php } ?>>Inativo</option>
+				<option value="A">Ativo</option>
+				<option value="I">Inativo</option>
 			</select><br><br>
 			
 			<button type="submit">Alterar</button>

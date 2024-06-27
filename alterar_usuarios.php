@@ -11,6 +11,12 @@
 <html lang="pt-br">
 	<head>
 		<title></title>
+		<script>
+			$(document).ready(function() {
+			var tipoUserFromPHP = "<?php echo $item['tipo']; ?>";
+			$("#tipo").val(tipoUserFromPHP);
+		});
+		</script>
 	</head>
 	<body>
 		<?php include('menu.php'); ?>
@@ -30,8 +36,8 @@
 
 			<label for="tipo">Tipo de Usuário</label><br>
 			<select name="tipo" id="tipo">
-				<option value="Administrador">Administrador</option>
-				<option value="Usuário Comum">Usuário Comum</option>
+				<option value="1">Administrador</option>
+				<option value="2">Usuário Comum</option>
 			</select><br><br>
 			
 			<button type="submit">Alterar</button>
