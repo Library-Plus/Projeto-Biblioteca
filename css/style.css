@@ -7,8 +7,6 @@ body{
   color: white;
   font-style: normal;
   font-size: 19px;
-  min-width: 97%;
-  max-width: 97%;
   margin: 15px;
 }
 .about {
@@ -202,17 +200,18 @@ h1{
   font-size: 22px;
 }
 .tabela{
-  width: 99%;
+  width: 100%;
   padding: 5px;
   height: 50px;
   border-collapse: collapse;
 }
 th {
   font-size: 15px;
-  padding: 15px;
+  padding: 10px;
 }
 td {
   text-align: center;
+  padding: 8px 0;
 }
 th:first-child{
   border-top-left-radius: 15px;
@@ -304,12 +303,11 @@ input.senha {
 }
 #txtBuscar{
   margin-right: 10px;
-  width: 90%;
+  width: 30%;
 }
 .buscar {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
 }
 .data {
   border-bottom-left-radius: 0px;

@@ -6,9 +6,7 @@
 	$id = $_GET['id'];
 
 	$sql = "DELETE FROM tipo WHERE id = {$id}";
-	if ($usuario['tipo'] == 1){
-		$query = mysqli_query($conexao, $sql);
-	}
+	$query = mysqli_query($conexao, $sql);
 
 	if (!$query) {
 		$arr['tipo'] = 'erro';

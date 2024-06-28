@@ -7,6 +7,7 @@
 
 	$sql = "DELETE FROM vendedor WHERE id = '{$id}'";
 	$query = mysqli_query($conexao, $sql);
+	
 	if (!$query) {
 		$arr['tipo'] = 'erro';
 		$arr['msg'] = mysqli_error($conexao);

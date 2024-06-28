@@ -55,7 +55,12 @@
     		<button type="button" class="btn-actions" id="buscar">Buscar</button>
 		</form>
 		
-		<a href="cadastrar_livros.php"><button class="btn-actions">Cadastrar</button></a>
+		<?php
+			if ($_SESSION['usuario']['tipo'] == 1){
+		?>		<a href="cadastrar_livros.php"><button class="btn-actions">Cadastrar</button></a>
+		<?php
+			}
+		?>
 		<table class="tabela" id="tabela_livros">
 			<thead>
 				<tr>
@@ -65,7 +70,11 @@
 					<th>Gênero</th>
 					<th>Sinopse</th>
 					<th>Status</th>
-					<th>Ações</th>
+					<?php
+						if ($_SESSION['usuario']['tipo'] == 1){
+							echo '<th>Ações</th>';
+						}
+					?>
 				</tr>
 			</thead>
 			<tbody>
@@ -86,10 +95,16 @@
 					<td><?php echo $item['tipo']; ?></td>
 					<td><?php echo $item['sinopse']; ?></td>
 					<td><?php echo $item['status'] == 'A' ? 'Ativo' : 'Inativo'; ?></td>
-					<td>
-						<a href="alterar_livros.php?id=<?php echo $item['id']; ?>">Alterar</a><br>
-						<a class="excluir">Excluir</a>
-					</td>
+					<?php
+						if ($_SESSION['usuario']['tipo'] == 1){
+					?>  	
+							<td>
+								<a href="alterar_tipos.php?id=<?php echo $item['id']; ?>">Alterar</a><br>
+								<a class="excluir">Excluir</a>
+							</td>
+					<?php	
+						}
+					?>
 				</tr>
 			<?php
 				}

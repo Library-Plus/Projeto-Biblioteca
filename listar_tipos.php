@@ -54,8 +54,13 @@
     		<input type="text" name="txtBuscar" id="txtBuscar">
     		<button type="button" class="btn-actions" id="buscar">Buscar</button>
 		</form>
-
-		<a href="cadastrar_tipos.php"><button class="btn-actions">Cadastrar</button></a>
+		
+		<?php
+			if ($_SESSION['usuario']['tipo'] == 1){
+		?>		<a href="cadastrar_tipos.php"><button class="btn-actions">Cadastrar</button></a>
+		<?php
+			}
+		?>
 		<table class="tabela" id="tabela_tipos">
 			<thead>
 				<tr>
@@ -82,10 +87,12 @@
 					<td><?php echo $item['genero']; ?></td>
 					<?php
 						if ($_SESSION['usuario']['tipo'] == 1){
-							echo '<td>
-								  	<a href="alterar_tipos.php?id=' . $item['id'] . '>Alterar</a><br>
-								  	<a class="excluir">Excluir</a>
-								  </td>';
+					?>  	
+							<td>
+								<a href="alterar_tipos.php?id=<?php echo $item['id']; ?>">Alterar</a><br>
+								<a class="excluir">Excluir</a>
+							</td>
+					<?php	
 						}
 					?>
 				</tr>
